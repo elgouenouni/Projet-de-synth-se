@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="cc.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  
+    .contact-info {
+      background-color: #f0f8ff; /* Bleu clair */
+      padding: 20px 0;
+    }
+    .contact-info p {
+      margin-bottom: 10px;
+      color: #76c9e7; /* Vert */
+      font-size: 16px;
+    }
+    .contact-info i {
+      margin-right: 10px;
+      color: #43b7e1; /* Vert foncé pour les icônes */
+      font-size: 18px;
+    }
+    .contact-form {
+      max-width: 450px;
+      margin-top: 8%;
+      margin: 0 auto;
+      border: 1px solid #ccc; /* Ajoute une bordure grise de 1px */
+      border-radius: 10px; /* Arrondit les coins de la boîte */
+      box-shadow: 0 0 10px rgba(15, 15, 15, 0.1); /* Ajoute une ombre légère */
+      padding: 20px; /* Espacement intérieur */
+    }
+    h3 {
+      color: #73ccdf; /* Vert pour le titre */
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    #button1{
+        /* color: #006400; */
+        background-color: rgb(107, 201, 238);
+    }
+    .contact-image {
+      text-align: center; /* Centrer l'image horizontalement */
+      margin-bottom: 20px; /* Espacement entre l'image et le formulaire */
+    }
+    .contact-image img {
+      max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de sa div parente */
+      height: auto; /* Ajuste la hauteur de l'image en fonction de sa largeur */
+    }
+    .IMGG{
+      margin-top: 20%;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="div1">
+        <a class="li2"  href="#">Pureté<span class="Pro">Pro</span></a>
+      </div>
+      <ul class="ul1">
+        <li class="li1"><a class="a" href="#">Service</a></li>
+        <li class="li1"><a class="a" href="#">Produit</a></li>
+        <li class="li1"><a class="a" href="#">Reservation</a></li>
+        <li class="li1"><a class="a" href="#">Projet</a></li>
+        <li class="li1"><a class="a" href="#">Contact</a></li>
+        <li class="li1"><a class="a" href="#">Login</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="contact-image">
+          <img class="IMGG" src="Screenshot 2024-02-09 131326.png" alt="Contact Image">
+        </div>
+      </div>
+      
+      <div class="col-md-8">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="contact-form">
+         
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" id="button1" class="btn btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="servicefooter">
+      <p class="pSer">Nos Services</p>
+        <p>Nettiyage apartement</p>
+        <p>Nettiyage bureau</p>
+        <p>Nettiyage villa</p>
+        <p>Nettiyage marbre</p>
+    </div>
+    <div class="contac">
+      <p class="pSer">Restons en Contact </p>
+        <p>0562644549 </p>
+        <p>PuretéPro.@gmail.com</p>
+        <p>6 rue de L'invertion, Paris <br> vil 75007</p>
+    </div>
+    <div class="horaire">
+      <p class="pSer">Les Horaires</p>
+        <p>Lun 8:30 - 6:30 </p>
+        <p>mar 8:30 - 6:30 </p>
+        <p>mer8:30 - 6:30 </p>
+        <p>jeu 8:30 - 6:30 </p>
+        <p>ven 8:30 - 6:30 </p>
+        <p>sam Fermé </p>
+        <p>dim Fermé </p>
+    </div>
+    <div class="conte">
+      <p class="pSer">Nos Réseaux</p>
+      <p class="p1"><i class="fa-brands fa-square-facebook"></i>&nbsp;&nbsp;PuretéProNettoyage </p>
+      <p class="p1"><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;PuretéProNettoyage</p>
+      <p class="p1"><i class="fa-brands fa-square-twitter"></i>&nbsp;&nbsp;Twiter/pureté</p>
+    </div>
+  </div>
+</footer>
+  
+  
+  
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script
