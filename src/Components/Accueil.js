@@ -182,7 +182,7 @@ export default function Accueil() {
      
 
 
-<div className="cProduits" ref={services}>
+<div className="cProduits" ref={produits}>
           <div className="Tproduit">
             <p>____  Services</p>
             <h1 className="h1po">Offrir le meilleur<br/>Cleaning Produits </h1>
@@ -207,7 +207,7 @@ export default function Accueil() {
             </div>
             
           </div><br/>
-          <p className="pp">Fournir un ensemble complet de services pour les entreprises et les particuliers</p>
+          <p className="pp">Fournir un ensemble complet de produits pour les entreprises et les particuliers</p>
       </div> 
     </div>
 
@@ -215,6 +215,7 @@ export default function Accueil() {
 
    
     <Footer/>
+  
    
   </div>
   );
