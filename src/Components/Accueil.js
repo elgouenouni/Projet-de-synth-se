@@ -213,26 +213,7 @@ export default function Accueil() {
 
 
 
-    <div className="contactA">
-      <img className="imgCon" src="woman-8511676_1280.webp"  alt=""/>
-      <div className="divContact">
-                 <form action="#" method="POST">
-                   <div class="f">
-                     <label for="name">Name</label>
-                     <input type="text"  id="name" name="name" required/>
-                   </div>
-                   <div class="f">
-                     <label for="email">Email</label>
-                     <input type="email"  id="email" name="email" required/>
-                   </div>
-                   <div class="f">
-                     <label for="message">Message</label>
-                     <textarea  id="message" name="message" rows="5" required></textarea>
-                   </div>
-                   <button class="" > Lire plus </button>
-                 </form>
-               </div>
-             </div>
+   
     <Footer/>
    
   </div>
