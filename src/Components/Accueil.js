@@ -32,6 +32,7 @@ export default function Accueil() {
   
   return (
     <div>
+      
 
       <header>
         <div class="container1">
@@ -40,8 +41,9 @@ export default function Accueil() {
             <Link class="li2" to="/">PuretéPro</Link>
           </div>
           <ul class="ul1">
-            <li class="li1"><Link class="a" onClick={()=>scrollToSection(services)} to="">Service</Link></li>
-            <li class="li1"><Link class="a" onClick={()=>scrollToSection(produits)} to="">Produit</Link></li>
+          <li class="li1"><Link class="a" to="/">Accueil</Link></li>
+            <li class="li1"><Link class="a" onClick={()=>scrollToSection(services)} to="/serviecs">Service</Link></li>
+            <li class="li1"><Link class="a" onClick={()=>scrollToSection(produits)} to="/produits">Produit</Link></li>
             <li class="li1"><Link class="a" to="/Reservations">Reservation</Link></li>
             <li class="li1"><Link class="a"onClick={()=>scrollToSection(projets)} to="">Projet</Link></li>
             <li class="li1"><Link class="a" to="/Contact">Contact</Link></li>
