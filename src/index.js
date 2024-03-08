@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 
 import App from './App';
-// import App from './Components/exemple';
+// import App from './Components/Copm';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
