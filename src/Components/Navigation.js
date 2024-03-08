@@ -12,10 +12,11 @@ export default function Navigation(){
             <Link class="li2" to="/">PuretéPro</Link>
           </div>
           <ul class="ul1">
+          <li class="li1"><Link class="a" to="/">Accueil</Link></li>
             <li class="li1"><Link class="a" to="/serviecs">Service</Link></li>
             <li class="li1"><Link class="a" to="/produits">Produit</Link></li>
             <li class="li1"><Link class="a" to="/Reservations">Reservation</Link></li>
-            <li class="li1"><Link class="a" to="/Projet">Projet</Link></li>
+            <li class="li1"><Link class="a" to="/Pr+ojet">Projet</Link></li>
             <li class="li1"><Link class="a" to="/Contact">Contact</Link></li>
             <div class="li12">
             <li class="li13"><Link class="a1" to="/login">Login</Link></li>
