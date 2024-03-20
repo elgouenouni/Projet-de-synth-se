@@ -6,8 +6,9 @@ function Contact() {
   return (
 
    <>
-   <Navigation/> 
+   <Navigation/>    
     <div className="container11" >
+      
       <div className="row">
         <div className="col">
           <div className="contact-image">
