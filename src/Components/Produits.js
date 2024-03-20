@@ -1,8 +1,9 @@
 import React from 'react';
-import '../CssStyles/style.css'
+import '../CssStyles/ProduitReservation.css'
 import Navigation from './Navigation';
 import "../CssStyles/acueil.css";
 import Footer from './Footer';
+import { Link } from "react-router-dom";
 
 function Produit() {
     return (
@@ -12,7 +13,7 @@ function Produit() {
              <h2 class="title"> NOS PRODUITS </h2>
 
             <div class="btn-conteiner">
-                <a class="btn-content" href="#">
+                <Link class="btn-content" to="/Contact">
                     <span class="btn-title">CONTACTEZ-NOUS</span>
                     <span class="icon-arrow">
                         <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
@@ -23,7 +24,7 @@ function Produit() {
                         </g>
                         </svg>
                     </span> 
-                </a>
+                </Link>
             </div>
         <div class="div1">
             <div class="cardproduit">
@@ -74,32 +75,7 @@ function Produit() {
       
 
       
-    <div class="div1">
-            <div class="cardproduit">
-                <img src="istockphoto-1316627014-612x612.jpg" alt="" class="cardproduit-image"/> 
-                <div class="category"> NomProduit </div>
-                <div class="heading"> Une agence web est une entreprise spécialisée dans la création, la conception.
-                    <div class="author"> touhfa <span class="name">el</span> gouenouni</div>
-                </div>
-            </div>
-            <div class="cardproduit">
-                <img src="istockphoto-1316627014-612x612.jpg" alt="" class="cardproduit-image"/>  
-                <div class="category"> NomProduit </div>
-                <div class="heading"> Une agence web est une entreprise spécialisée dans la création, la conception.
-                    <div class="author"> touhfa <span class="name">el</span> gouenouni</div>
-                </div>
-            </div>
-                <div class="cardproduit">
-                <img src="istockphoto-1316627014-612x612.jpg" alt="" class="cardproduit-image"/> 
-                <div class="category"> NomProduit </div>
-                <div class="heading"> Une agence web est une entreprise spécialisée dans la création, la conception.
-                    <div class="author"> touhfa <span class="name">el</span> gouenouni</div>
-                </div>
-    </div>
-   
     
-    
-    </div>
     
 
         </div>

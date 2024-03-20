@@ -9,9 +9,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
+/* body{
   background: #daefef;
-}
+} */
 .header{
   display: flex;
   align-items: center;
@@ -33,24 +33,25 @@ body{
   font-weight: 600;
   margin: 2rem 8rem 2rem 2rem;
 }
-.search_box{
+.search_boxx{
   display: flex;
   align-items: center;
   
 }
-.search_box input{
+.search_boxx input{
   padding: 9px;
   width: 250px;
   background: #c3f0ef;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  height: 39px;
 }
-.search_box i{
-  padding: 0.63rem;
+.search_boxx i{
+  padding: 0.64rem;
   cursor: pointer;
   color: #fff;
   background: #19B3B1;
-  height:38px ;
+  height:39px ;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -74,16 +75,22 @@ body{
   cursor: pointer;
   border-radius: 50%;
 }
+.header-icons .account h6{
+  margin-top: 10px;
+  font-weight: bold;
+  color: black;
+}
 .iconeAdmin{
   font-size: 40px;
   margin-top: 10px;
   color: #044a49;
 }
-.container{
+.containerAdmine{
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
   height: 89%;
+  /* background-color: #000000; */
 }
 
 /* Side menubar section */
@@ -98,6 +105,7 @@ nav{
   background: #fff;
   height: 100%;
   margin-top: 70px;
+  margin-left: 10px;
 }
 .side_navbar span{
   color: #044a49;
@@ -131,6 +139,7 @@ nav{
   width: 70%;
   padding: 1rem;
   margin-top: 50px;
+  
 }
 .imglogo{
     width: 100px;
@@ -145,16 +154,16 @@ margin-top:
 .h1-body{
   margin-left: -120px;
 }
-.promo_card{
-  width: 110%;
+.promo_cardClient{
+  width: 120%;
   color: #fff;
   margin-top: 10px;
   border-radius: 8px;
   padding: 0.5rem 1rem 1rem 3rem;
   background: #044a49;
-  margin-left: -120px;
+  margin-left: -130px;
 }
-.promo_card h1, .promo_card span, button{
+.promo_cardClient h1, .promo_card span, button{
   margin: 10px;
 }
 .promo_card button{
@@ -173,14 +182,19 @@ margin-top:
   
 }
 
-/* .row{
+.rowListeCli{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0;
-  width: 165%;
-  
-} */
+  width: 100%;
+  /* background-color: #000000; */
+}
+.rowListeCli h4{
+  font-size: 16px ;
+  color: #000000;
+  font-weight: bold;
+  margin-left: 10px;
+}
 .aT{
   margin-left: 30px;
   color: #8e9191;
@@ -196,7 +210,7 @@ table{
 }
 table td, th{
   padding: 0.2rem 0.8rem;
-  
+  color: black;
 }
 table th{
   font-size: 15px;
@@ -299,7 +313,7 @@ table td{
   color: #000000;
   display: inline-block;
 }
-.divicone{
+.diviconee{
   margin-left: 350px;
 }
 .list1{
@@ -310,7 +324,11 @@ table td{
 .h4list{
   /* background-color: #ff4800; */
   float: left;
-  margin-bottom: -50px;
+  margin-bottom: -100px;
+  color: black;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .selectServ{
   margin-left: 764px;
@@ -336,4 +354,127 @@ table td{
   text-align: center;
   width: 80px;
   border-radius: 2px;
+}
+.wrapC{
+  overflow: auto;
+  border-radius: 10px;
+  width: 100%;
+}
+@media screen and (max-width:1290px) {
+  
+  
+  .diviconee{
+    margin-left: 100px;
+  }
+  .selectServ{
+    margin-left: 664px;
+  }
+}
+@media screen and (max-width:1130px) {
+
+  .selectServ{
+    margin-left: 600px;
+  }
+}
+@media screen and (max-width:1100px) {
+  
+  .selectServ{
+    margin-left: 530px;
+  }
+  .diviconee{
+    margin-left: 30px;
+  }
+  .main-body{
+    width: 700px;
+  }
+  
+}
+@media screen and (max-width:1050px) {
+  
+  .selectServ{
+    margin-left: 430px;
+  }
+  .main-body{
+    width: 600px;
+  }
+  table{
+    width: 120%;
+  }
+  
+}
+@media screen and (max-width:950px) {
+  
+  .selectServ{
+    margin-left: 370px;
+  }
+  .main-body{
+    width: 550px;
+  }
+  .wrapC{
+    width: 640px;
+  }
+  table{
+    width: 120%;
+  }
+  .header{
+    background-color: #0bd85a;
+  }
+}
+@media screen and (max-width:900px) {
+  
+  .main-body{
+    width: 500px;
+  }
+  table{
+    width: 120%;
+  }
+  .promo_card h1{
+    font-size: 20px;
+  }
+  .iconeCFidéle ,
+  .iconeCnormale,
+  .iconeCblack{
+    font-size: 20px;
+  }
+  table th{
+    font-size: 12px;
+  }
+  table td{
+    font-size: 10px;
+    color: #044a49;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width:850px) {
+  /* .header{
+    background-color: #1fa151;
+  } */
+  .selectServ{
+    margin-left: 310px;
+  }
+  .main-body{
+    width: 450px;
+  }
+  .diviconee{
+    font-size: 13px;
+  }
+  .ButtonRes{
+    padding: 5px 13px;
+  }
+  .promo_card{
+    width: 520px;
+  }
+}
+@media screen and (max-width:850px) {
+  
+  .main-body{
+    width: 450px;
+  }
+
+  .ButtonRes{
+    padding: 5px 13px;
+  }
+  .search_box{
+    margin-left: -70px;
+  }
 }

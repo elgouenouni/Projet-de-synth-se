@@ -1,0 +1,84 @@
+/* inscription.css */
+
+/* Styles pour la carte d'inscription */
+.card {
+  border: 1px solid #fcfdfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin-top: 20%;
+ 
+}
+.card-body{
+  margin-bottom: 6%;
+}
+.card-headerr {
+ 
+  border-bottom: none;
+  text-align: center;
+}
+
+.card-titlee {
+  font-weight: bold;
+  margin-top: 10%;
+  font-size: 24px;
+  color: #3cbbe1;
+}
+
+.form-control {
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  width: 90%;
+  /* Supprimer la marge supérieure */
+}
+
+.containerInscri {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(1, 1, 1, 0.1);
+  width: 1000px;
+  background-color: white;
+}
+
+.btn-primary {
+  background-color:#00c3ff ;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 6%;
+}
+
+.btn-primary:hover {
+  background-color:#42c9f1 ;
+}
+
+.img-fluid {
+  margin-top: 40%;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%; /* Ajustez la largeur pour les téléphones */
+    margin-top: 10%; /* Ajustez la marge supérieure pour les téléphones */
+  }
+  
+  .containerInscri {
+    width: 200%; /* Ajustez la largeur pour les téléphones */
+  }
+  
+  .btn-primary {
+    width: 90%; /* Ajustez la largeur pour les téléphones */
+    margin-left: 6%; /* Ajustez la marge pour les téléphones */
+    margin-top: 12%; /* Ajustez la marge pour les téléphones */
+  }
+   /* Masquer l'image pour les téléphones */
+   .img-fluid {
+    display: none;
+  }
+ 
+}

@@ -7,8 +7,11 @@ import Login from "./Components/login";
 import Inscription from "./Components/inscription";
 import Produits from "./Components/Produits"
 import Reservations from "./Components/Reservations";
-import Contact from "./Components/Contact"
+import Contact from "./Components/contact"
 import Services from "./Components/Services";
+import ListeClient from "./Components/listeClient";
+import ListeFondateur from "./Components/listeFondatur";
+import ListePrestataire from "./Components/listePrestataire";
 
 
 
@@ -18,7 +21,6 @@ export default function App(){
   return(
     <div>
       <Router>
-        {/* <Navigation/> */}
         <Routes>
           <Route path="/" element={<Accueil/>} />
           <Route path="/Projet" element={<Projet />} />
@@ -28,6 +30,12 @@ export default function App(){
           <Route path="/Reservations" element={<Reservations />}/>
           <Route path="/Contact" element={<Contact />}/>
           <Route path="/serviecs" element={<Services />} />
+
+          {/* lespace admine */}
+
+          <Route path="/listeClient" element={<ListeClient/>}/>
+          <Route path="/listeFonsa" element={<ListeFondateur/>}/>
+          <Route path="/ListePrest" element={<ListePrestataire/>}/>
         </Routes>
       </Router>
     </div>

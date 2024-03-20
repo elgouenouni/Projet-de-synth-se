@@ -6,14 +6,16 @@ import { AiFillSmile, AiFillInstagram, AiFillTwitterCircle, AiOutlineGoogle, AiF
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
+  
   return (
+    <div className='foterA'>
     <MDBFooter bgColor='dark' style={{marginTop:"50px"}} className='text-white text-lg-start'>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
           <span style={{fontWeight:"bold",marginLeft:"50px"}}>Connectez-vous avec nous sur les réseaux sociaux :</span>
         </div>
 
-        <div>
+        <div className='icones'>
           <a href='' className='me-4 text-reset'>
             <BsFacebook className='me-4 text-white' style={{ fontSize: "30px" }} />
           </a>
@@ -33,7 +35,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className=''>
+      <section className='class'>
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
@@ -45,34 +47,10 @@ export default function App() {
                                                   }}/>
               </div>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
+                Nous sommes une entreprise de nettoyage professionnelle fondée en 1997 et fournissons des 
+                solutions de nettoyage commerciales et résidentielles de premier plan au Maroc.
               </p>
             </MDBCol>
-
-            {/* <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Angular
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  React
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Laravel
-                </a>
-              </p>
-            </MDBCol> */}
 
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Les Horaires</h6>
@@ -131,5 +109,6 @@ export default function App() {
         </a>
       </div>
     </MDBFooter>
+  </div>
   );
 }

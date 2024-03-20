@@ -9,16 +9,16 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
+/* body{
   background: #daefef;
-}
+} */
 .header{
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 60px;
   padding: 20px;
-  background: #fff;
+  /* background: #fff; */
   position: fixed;
   margin-top: -10px;
   width: 100%;
@@ -26,6 +26,7 @@ body{
 .logo{
   display: flex;
   align-items: center;
+  margin-left: 30px;
 }
 .logo a{
   color: #19B3B1;
@@ -36,8 +37,11 @@ body{
 .search_box{
   display: flex;
   align-items: center;
-  
+  margin-left: -20px;
 }
+/* .text{
+  margin-left: 0px;
+} */
 .search_box input{
   padding: 9px;
   width: 250px;
@@ -74,16 +78,22 @@ body{
   cursor: pointer;
   border-radius: 50%;
 }
+.header-icons .account h6{
+  margin-top: 10px;
+  font-weight: bold;
+
+}
 .iconeAdmin{
   font-size: 40px;
   margin-top: 10px;
   color: #044a49;
 }
-.container{
+.containerListefon{
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
   height: 89%;
+  /* margin-left: -10px; */
 }
 
 /* Side menubar section */
@@ -96,7 +106,7 @@ nav{
   flex-direction: column;
   position: fixed;
   background: #fff;
-  height: 100%;
+  height: 190%;
   margin-top: 70px;
 }
 .side_navbar span{
@@ -110,6 +120,7 @@ nav{
   font-weight: 500;
   font-size: 15px;
   color:#044a49 ;
+  text-decoration: none;
 }
 .links{
   margin-top: 5rem;
@@ -128,31 +139,30 @@ nav{
 
 /* Main Body Section */
 .main-body{
-  width: 70%;
+  width: 79%;
   padding: 1rem;
   margin-top: 50px;
+  /* background-color: #0bd85a; */
+  /* margin-right: -180px; */
 }
-.imglogo{
+/* .imglogo{
     width: 100px;
     height: 100px;
-  }
+  } */
   .a1{
-margin-top: 
-0%;
-       
-        
-      }
+      margin-top:0%;
+    }
 .h1-body{
   margin-left: -120px;
 }
 .promo_card{
-  width: 110%;
+  width: 100%;
   color: #fff;
   margin-top: 10px;
   border-radius: 8px;
   padding: 0.5rem 1rem 1rem 3rem;
   background: #044a49;
-  margin-left: -120px;
+  margin-left: 0.001px;
 }
 .promo_card h1, .promo_card span, button{
   margin: 10px;
@@ -191,8 +201,6 @@ table{
   text-align: left;
   border-radius: 10px;
   width: 100%;
-  
-  
 }
 table td, th{
   padding: 0.2rem 0.8rem;
@@ -205,6 +213,12 @@ table td{
   font-size: 11px;
   color: #044a49;
   margin-right: 20px;
+}
+.wrap{
+  overflow: auto;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
 }
 
 
@@ -245,9 +259,10 @@ table td{
 .imglogo{
   width: 250px;
   height: 150px;
-  margin-left: -39px;
+  margin-left: -57px;
   margin-right: -190px;
   margin-bottom: -20px;
+  margin-top: 5px;
 }
 .ButtonRes{
   padding: 5px 17px;
@@ -304,23 +319,10 @@ table td{
 }
 .list1{
   /* background-color: #072e2d; */
-  width: 97%;
+  width: 100%;
   margin-top: 20px;
-}
-.h4list{
-  /* background-color: #ff4800; */
-  margin-bottom: 20px;
-}
-.selectServ{
-  margin-left: 764px;
-  height: 50px;
-  width: 200px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  text-align: center;
-  /* background-color: #0daaa7; */
-  font-weight: bold;
-  margin-top: -100px;
+  /* background-color: #0bd85a; */
+  margin-left: 110px;
 }
 .indispo{
   background-color: rgb(255, 195, 195);
@@ -335,4 +337,150 @@ table td{
   text-align: center;
   width: 80px;
   border-radius: 2px;
+}
+label .btnice {
+  color: rgb(42, 40, 40);
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: none;
+  position: absolute;
+}
+label .cancele  {
+  color: rgb(42, 40, 40);
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: none;
+  
+}
+#checke{
+  margin-top: 17px;
+  margin-left: 19px;
+  position: absolute;
+  display: none;
+}
+@media screen and (max-width:1130px) {
+  table{
+    width: 95%;
+  }
+  .promo_card{
+    width: 95%;
+  }
+    
+}
+@media screen and (max-width:1099px) {
+  table{
+    width: 90%;
+  }
+  .promo_card{
+    width: 90%;
+  }
+    
+}
+@media screen and (max-width:1099px) {
+  .side_navbar{
+    width: 200px;
+  }
+  .side_navbar a{
+    width: 100%;
+    padding: 0.8rem 3rem;
+    font-weight: 500;
+    font-size: 12.4px;
+  }
+}
+@media screen and (max-width:950px) {
+
+  .wrap{
+    width: 95%;
+    border-radius:10px ;
+  }
+  table{
+    width: 110%;
+  }
+  .promo_card{
+    width: 90%;
+  }
+
+}
+@media screen and (max-width:920px) {
+  label .btnice{
+    display: block;
+    margin-bottom: 30px;
+  }
+  .side_navbar span , 
+  .side_navbar a {
+    display: none;
+    
+  }
+
+  .side_navbar{
+    width: 60px;
+  }
+
+  #checke:checked ~ label .btnice{
+    display: none;
+  }
+  #checke:checked ~  label .cancele{
+    display: block;
+  }
+
+  #checke:checked ~ .side_navbar span,
+  #checke:checked ~ .side_navbar a {
+    display: block;
+  }
+  
+  #checke:checked ~ .side_navbar {
+    width: 199px;
+    background-color: white;
+  }
+  .main-body{
+    width: 115%;
+    /* background-color: #0bd85a; */
+    margin-right: -200px;
+  }
+  .wrap{
+    width: 80%;
+    border-radius:10px ;
+  }
+  table{
+    width: 100%;
+  }
+  .promo_card{
+    width: 80%;
+  }
+}
+@media screen and (max-width:900px) {
+  .wrap{
+    width: 75%;
+    border-radius:10px ;
+  }
+  table{
+    width:100%;
+  }
+  .promo_card{
+    width: 75%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  /* .header{
+    background-color: #0bd85a;
+  } */
+  .wrap{
+    width: 70%;
+    border-radius:10px ;
+    margin-left: -50px;
+  }
+  table{
+    width:100%;
+  }
+  .promo_card{
+    width: 75%;
+    margin-left: -50px;
+  }
 }
