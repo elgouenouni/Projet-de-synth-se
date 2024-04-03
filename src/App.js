@@ -12,7 +12,9 @@ import Services from "./Components/Services";
 import ListeClient from "./Components/listeClient";
 import ListeFondateur from "./Components/listeFondatur";
 import ListePrestataire from "./Components/listePrestataire";
-
+import Devis from "./Components/Devis";
+import AccueilDevis from "./Components/AccuielDevis";
+import ProfilDevis from "./Components/ProfilDevis";
 
 
 export default function App(){
@@ -31,11 +33,18 @@ export default function App(){
           <Route path="/Contact" element={<Contact />}/>
           <Route path="/serviecs" element={<Services />} />
 
-          {/* lespace admine */}
+           {/* lespace admine */}
 
           <Route path="/listeClient" element={<ListeClient/>}/>
           <Route path="/listeFonsa" element={<ListeFondateur/>}/>
           <Route path="/ListePrest" element={<ListePrestataire/>}/>
+
+           {/* Espace Fondateur */}
+
+          <Route path="/accueilDevis" element={<Accueil/>}/>
+          <Route path="/Devis" element={<Devis/>}/>
+          <Route path="/ProfilDevis" element={<Profil/>} />
+          
         </Routes>
       </Router>
     </div>
