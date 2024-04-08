@@ -15,6 +15,7 @@ import ListePrestataire from "./Components/listePrestataire";
 import Devis from "./Components/Devis";
 import AccueilDevis from "./Components/AccuielDevis";
 import ProfilDevis from "./Components/ProfilDevis";
+import ProfilAdmin from './Components/ProfileAdmin'
 
 
 export default function App(){
@@ -44,6 +45,7 @@ export default function App(){
           <Route path="/accueilDevis" element={<Accueil/>}/>
           <Route path="/Devis" element={<Devis/>}/>
           <Route path="/ProfilDevis" element={<ProfilDevis/>} />
+          <Route path="/ProfilAdmin" element={<ProfilAdmin />} />
           
         </Routes>
       </Router>
