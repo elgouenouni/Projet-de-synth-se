@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+ 
+    color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #4592AF; 
+    border-radius: 10px;
+    margin-top: 200px;
+    box-shadow: #78a5b5 5px 10px 5px;
+  
+  }
+  
+  
+  
+  h1, h2 {
+    color: #226089; 
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select, input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+
+
+
+
+
+ 
+nav {
+   
+    color: #000000; 
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-top: 20px;
+  }
+  
+  nav h1 {
+    margin: 0;
+    font-size: 10px;
+   
+  
+  }
+  .anav{
+    margin-left: 1200px;
+  }
+  
+  .Divlinks {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Divlinks #img {
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  .Divlinks a {
+    text-decoration: none;
+  }
+  
+  .Divlinks h1 {
+    margin: 0;
+    font-size: 40px;
+    color: black; 
+  }
+  
+  
+  .deconnecter {
+    margin-left:20px ;
+    background:linear-gradient(#071952,#0766AD);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 12px;
+    width: 160px;
+    text-align: center;
+    
+  }
+  .deconnecter:hover {
+    background:linear-gradient(#0766AD,#071952);
+    color: white; 
+  }
+  .divh3{
+    background-color:#071952;
+    color: white;
+    width: 1000px;
+    height: 100px;
+    margin-left: 450px;
+    text-align: center;
+    border-radius: 10px;
+    
+    padding: 30px;
+    margin-bottom:30px ;
+  }
+  #divAccuiel {
+   
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: #071952 0px 1px 4px 1px ; 
+    width: 1700px;
+   
+   
+  }
+  
+  #divAccuiel h3 {
+    color: #000000; 
+    margin-top: 0;
+  }
+  
+  #divAccuiel p {
+    margin-top: 5px;
+    color: #000; 
+  }
+  
+  #divAccuiel .a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background:linear-gradient(#071952,#0766AD);
+    margin-top: 10px;
+    width: 160px;
+    margin-left: 1400px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  #divAccuiel .a:hover {
+    background:linear-gradient(#0766AD,#071952);
+    color: white;
+  }

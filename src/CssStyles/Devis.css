@@ -1,514 +1,634 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #E3C4A8; 
-  color: #000000;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 50px;
-  background-color: #4592AF; 
-  border-radius: 10px;
-  margin-top: 200px;
-  box-shadow: #78a5b5 5px 10px 5px;
-
-}
 
 
-
-h1, h2 {
-  color: #226089; 
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-select, input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-
-
-.hidden {
-  display: none;
-}
-
-
-
-
- /* Page Accuiel */
-
-
-
-
- 
-nav {
-   
-  color: #000000; 
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  height: 80px;
-  margin-top: 20px;
-}
-
-nav h1 {
-  margin: 0;
-  font-size: 10px;
- 
-
-}
-.anav{
-  margin-left: 1200px;
-}
-
-.Divlinks {
-  display: flex;
-  align-items: center;
-}
-
-.Divlinks #img {
-  width: 250px;
-  margin-right: 10px;
-}
-
-.Divlinks a {
-  text-decoration: none;
-}
-
-.Divlinks h1 {
-  margin: 0;
-  font-size: 40px;
-  color: black; 
-}
-
-
-.deconnecter {
-  margin-left:20px ;
-  background:linear-gradient(#071952,#0766AD);
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  padding: 12px;
-  width: 160px;
-  text-align: center;
-  
-}
-.deconnecter:hover {
-  background:linear-gradient(#0766AD,#071952);
-  color: white; 
-}
-.divh3{
-  background-color:#071952;
-  color: white;
-  width: 1000px;
-  height: 100px;
-  margin-left: 450px;
-  text-align: center;
-  border-radius: 10px;
-  
-  padding: 30px;
-  margin-bottom:30px ;
-}
-#divAccuiel {
- 
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: #071952 0px 1px 4px 1px ; 
-  width: 1700px;
- 
- 
-}
-
-#divAccuiel h3 {
-  color: #000000; 
-  margin-top: 0;
-}
-
-#divAccuiel p {
-  margin-top: 5px;
-  color: #000; 
-}
-
-#divAccuiel .a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  background:linear-gradient(#071952,#0766AD);
-  margin-top: 10px;
-  width: 160px;
-  margin-left: 1400px;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-#divAccuiel .a:hover {
-  background:linear-gradient(#0766AD,#071952);
-  color: white;
-}
-
-
-
-   /* Page Profil*/
-
-
-
-
-/* .image-container {
-  width: 200px; 
-  height: 200px;
-  overflow: hidden; 
-  border-radius: 50%; 
-  background-color: #00000080;
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-bottom: 0;
-}
-
-.imagg {
-  width: 100%; 
-  height: auto; 
-  display: block; 
-} */
-/* hr {
-  height: 1px;
-  background-color: #C5E898;
-  border: none;
-} */
-.mainprofil{
-  background-image: url('/public/media/profil-image.jpg');
-  position: absolute;
-  bottom: 430px;
-  width: 100%;
-  height: 50%; 
-  background-size: cover;
-  background-color: #0766AD;
- 
-}
-.div1profile{
-  margin-top: 10px;
-  margin-left: 20px;
-  display:flex;
-  justify-content: center;
-}
-.titleprofil {
-  font-weight: 700;
-  font-size: 15px;
-  color: #000000;
-}
-.div2{
- display: flex;
- margin-left: 200px;
- 
-
-}
-.div3{
-  display: flex;
-  padding-left: 70px;
-  padding-right: 20px;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  margin: 20px;
-  width: 400px;
-  background-color: #071952;
-  color: #F3F3F3;
-  border-radius: 20px;
-  font-size: 20px;
-
-}
-
-.div4{
-  background-color: #F3F3F3;
-  border-radius: 10px;
-  width: 900px;
-  height: 500px;
-  margin-left: 400px;
-  padding-left: 200px;
-  margin-top: 50px;
-}
-.imageprofil{
-      margin-left: 40px;
-}
-.buttonProfil{
-  color: white;
-  background:linear-gradient(#0766AD,#071952);
-  border-radius: 20px;
-  margin-left: 450px; 
-  margin-top: 30px;
-  font-size:20px;
-}
-.buttonProfil:hover{
-  background:linear-gradient(#071952,#0766AD);
-}
-.linkProfil{
-  text-decoration: none;
-  background:linear-gradient(#071952,#0766AD);
-  border-radius: 20px;
-  font-size: 30px;
-  color: white;
-  margin-left: 1750px;
-  padding: 10px;
-  
-}
-.cardprofil {
-  width: 700px;
-  padding: 30px;
-  margin-top: 0px;
-  font-size: 10px;
-  font-weight:bold;
-  margin-left:100px;
-  margin-top: 40px;
-  font-size: 19px;
-  background: #29ADB2;
-  border-radius: 19px 19px 0px 0px;
-  box-shadow: 0px 187px 75px C5E898, 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
-}
-#Modifier{
-  color: #F3F3F3;
-  background-color: #0766AD;
-  border-radius: 20px;
-  width: 500px;
-  margin-left: 50px;
-}
-#Valider{
-  color: #F3F3F3;
-  background-color: #0766AD;
-  border-radius: 20px;
-  width: 500px;
-  margin-left: 200px;
-  font-size: 23px;
-  
-}
-
-#form{
-  width: 1000px;
-  box-shadow: #226089 2px 5px 7px 1px ;
-  padding: 20px;
-  margin-top: 40px;
-  margin-left:20%;
-  border-radius: 20px;
-  border: #0766AD;
-}
-.labele{
-  font-weight:bold;
-  font-size: 20px;
-  color: #071952;
- 
-}
-.form-control{
-    margin-bottom: 20px;
-    
-}
-
-
-
-
+@media all and (max-width:560px){
 /*  PAge Devis*/
 .container-checkbox {
-    cursor: pointer;
-    display: flex;
-   
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 20px;
+ 
 }
 
 .container-checkbox input {
-  display: none;
+display: none;
 
-}
+} 
 
 .container-checkbox svg {
-  overflow: visible;
+overflow: visible;
+}
+.p1checkbox{
+width: 20%;
 }
 
 .path {
-  fill: none;
-  stroke: rgb(85, 84, 84) ;
-  stroke-width: 6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
-  stroke-dasharray: 241 9999999;
-  stroke-dashoffset: 0;
+fill: none;
+stroke: rgb(85, 84, 84) ;
+stroke-width: 6;
+stroke-linecap: round;
+stroke-linejoin: round;
+transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+stroke-dasharray: 241 9999999;
+stroke-dashoffset: 0;
 
-  
+
 }
 .container-checkbox input:checked ~ svg .path {
-  stroke-dasharray: 70.5096664428711 9999999;
-  stroke-dashoffset: -262.2723388671875;
+stroke-dasharray: 70.5096664428711 9999999;
+stroke-dashoffset: -262.2723388671875;
 }
 .checkbox{
-  margin-top: 0px;
+margin-top: 0px;
 }
 .p-checkbox{
-  color: #000000;
-  margin-left: 20px;
+color: #000000;
+margin-left: 20px;
 }
 .div1{
-  display: flex;
+display: flex;
 }
 
 .div-main{
-  width: 1040px;
-  height: 70%;
-  margin: 50px auto;
-  padding: 50px;
-  background-color: white; 
-  border-radius: 15px;
-  margin-top: 400px;
-  box-shadow:  2px 5px 5px 2px;
-  
+width: 90%;
+height: 40%;
+margin: 50px auto;
+padding: 50px;
+background-color: white; 
+border-radius: 15px;
+margin-top: 400px;
+box-shadow:  2px 5px 5px 2px;
+
 
 }
 .standard-height{
-  height: 850px;
+height: 850px;
 }
 .nav-devis{
-  background-image: url('/public/media/profil-image.jpg');
-  position: absolute;
-  width: 1874px;
-  height: 290px; 
-  background-size: cover;
- 
+background-image: url('/public/media/profil-image.jpg');
+position: absolute;
+width: 100%;
+height: 290px; 
+background-size: cover;
+margin-top:3px ;
 
 }
 .link-devis{
-  color: white;
-  background:linear-gradient(to right,#071952,#0766AD);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
- padding-left: 40px;
- padding-right: 40px;
- margin-left: 1700px;
+color: white;
+background:linear-gradient(to right,#071952,#0766AD);
+text-decoration: none;
+padding: 10px;
+border-radius: 5px;
+padding-left: 40px;
+padding-right: 40px;
+margin-left: 1700px;
 
-  
+
 }
 .link-devis:hover{
-  color: white;
-  background:linear-gradient(to right,#0766AD,#071952);
+color: white;
+background:linear-gradient(to right,#0766AD,#071952);
 
 }
 .PurtePro{
-  font-size: 40px;
-  margin-bottom: 190px;
-  margin-right: 100px;
+font-size: 40px;
+margin-bottom: 190px;
+margin-right: 100px;
 }
-.main{
-  
-  padding: 20px;
- 
-}
+
 .input-Devis{
-  border-radius: 20px;
-  width: 400px;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  height: 45px;
-  box-shadow: #226089 2px 5px 7px 1px ;
-  padding: 27px;
-  border: #0766AD;
+border-radius: 20px;
+width: 400px;
+margin-left: 50px;
+margin-bottom: 20px;
+height: 45px;
+box-shadow: #226089 1px 3px 4px 1px ;
+padding: 27px;
+border: #0766AD;
 }
 .p1-devis,.h3-devis{
-  text-align: center;
-  color: #000000;
+text-align: center;
+color: #000000;
 }
 
 .table-devis {
-  width: 800px;
-  margin-left: 90px;
+width: 400px;
+margin-left: 10px;
 }
 
 
 
 .td-devis {
-  padding: 10px;
-  color: #071952;
-  font-size: 18px;
-
+padding: 10px;
+color: #071952;
+font-size: 18px;
+display: flex;
 
 }
+
+
 
 #typeService,
 #typeNettoyage,
 #nomberIntervention
 {
-  margin-left: 10px;
-  border-radius: 8px;
-  height: 50px;
-  margin-bottom: 20px;
-  background-color: white;
-  border: #070606 1px solid;
-  
+margin-left: 10px;
+border-radius: 8px;
+height: 50px;
+margin-bottom: 20px;
+background-color: white;
+border: #070606 1px solid;
+font-size: 15px;
+
+
 }
+
+
+
 
 .div1 {
-  margin-top: 20px;
-  
+margin-top: 20px;
+
 }
 
-.container-checkbox {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  margin-left: 60px;
-}
+
 
 .p-checkbox {
-  margin-right: 7px;
+margin-right: 7px;
 }
 
 .checkbox {
-  margin-right: 10px;
-  fill: none;
-  stroke: #000;
-  stroke-width: 5;
+margin-right: 10px;
+fill: none;
+stroke: #000;
+stroke-width: 5;
 }
 
+
+#specificArea{
+font-size: 18px;
+}
 .button-devis{
-  width: 950px;
-  border-radius: 20px;
-  height: 50px;
-  border: none;
-  font-size: 16px;
-  background:linear-gradient(to right,#071952,#0766AD);
-  color:#F3F3F3;
+width: 950px;
+border-radius: 20px;
+height: 50px;
+border: none;
+font-size: 16px;
+background:linear-gradient(to right,#071952,#0766AD);
+color:#F3F3F3;
 }
 .button-devis:hover {
-  background: linear-gradient(to right, #0766AD, #071952); 
+background: linear-gradient(to right, #0766AD, #071952); 
 }
 .input-ShowSurface{
-  border-radius: 20px;
-  width: 25%;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  height: 45px;
-  box-shadow: #226089 2px 5px 7px 1px ;
-  padding: 27px;
-  border: #0766AD;
+border-radius: 10px;
+width: 25%;
+margin-left: 50px;
+margin-bottom: 20px;
+height: 45px;
+box-shadow: #226089 1px 3px 4px 1px ;
+padding: 27px;
+border: #0766AD;
 }
 .input-type{
-    border-radius: 20px;
-    width: 400px;
-    box-shadow: #226089 2px 5px 7px 1px ;
-    border: #0766AD;
-    padding: 15px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    border: #0766AD;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: #226089 1px 3px 4px 1px ;
+  border: #0766AD;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border: #0766AD;
+font-size: 16px;
+}
+
+
+
+
+
 
 }
+
+@media all and (min-width:561px) and (max-width:789px){
+/*  PAge Devis*/
+.container-checkbox {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  width: 130px;
+}
+
+.container-checkbox input {
+display: none;
+
+} 
+
+.container-checkbox svg {
+overflow: visible;
+}
+.p1checkbox{
+ width: 100px;
+}
+
+
+.path {
+fill: none;
+stroke: rgb(85, 84, 84) ;
+stroke-width: 6;
+stroke-linecap: round;
+stroke-linejoin: round;
+transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+stroke-dasharray: 241 9999999;
+stroke-dashoffset: 0;
+
+
+}
+.container-checkbox input:checked ~ svg .path {
+stroke-dasharray: 70.5096664428711 9999999;
+stroke-dashoffset: -262.2723388671875;
+}
+.checkbox{
+margin-top: 0px;
+}
+.p-checkbox{
+color: #000000;
+margin-left: 20px;
+}
+.div1{
+display: flex;
+margin-top: 20px;
+}
+
+.div-main{
+width: 90%;
+height: 40%;
+margin: 50px auto;
+padding: 40px;
+background-color: white; 
+border-radius: 15px;
+margin-top: 400px;
+box-shadow:  2px 5px 5px 2px;
+
+
+}
+
+.standard-height{
+height: 850px;
+}
+.nav-devis{
+background-image: url('/public/media/profil-image.jpg');
+position: absolute;
+width: 100%;
+height: 290px; 
+background-size: cover;
+margin-top:3px ;
+
+}
+.link-devis{
+color: white;
+background:linear-gradient(to right,#071952,#0766AD);
+text-decoration: none;
+padding: 10px;
+border-radius: 5px;
+padding-left: 40px;
+padding-right: 40px;
+margin-left: 1700px;
+
+
+}
+.link-devis:hover{
+color: white;
+background:linear-gradient(to right,#0766AD,#071952);
+
+}
+.PurtePro{
+font-size: 40px;
+margin-bottom: 190px;
+margin-right: 100px;
+}
+
+.input-Devis{
+border-radius: 20px;
+width: 400px;
+margin-left: 50px;
+margin-bottom: 20px;
+height: 45px;
+box-shadow: #226089 1px 3px 4px 1px ;
+padding: 27px;
+border: #0766AD;
+}
+.p1-devis,.h3-devis{
+text-align: center;
+color: #000000;
+}
+
+.table-devis {
+width: 500px;
+margin-left: 20px;
+}
+
+
+
+.td-devis {
+padding: 10px;
+color: #071952;
+font-size: 18px;
+display: flex;
+
+}
+
+
+
+#typeService,
+#typeNettoyage,
+#nomberIntervention
+{
+margin-left: 10px;
+border-radius: 8px;
+height: 50px;
+margin-bottom: 20px;
+background-color: white;
+border: #070606 1px solid;
+font-size: 15px;
+
+
+}
+
+
+
+
+
+.p-checkbox {
+margin-right: 7px;
+}
+
+.checkbox {
+margin-right: 10px;
+fill: none;
+stroke: #000;
+stroke-width: 5;
+}
+
+
+#specificArea{
+font-size: 18px;
+}
+.button-devis{
+width: 90%;
+border-radius: 20px;
+height: 50px;
+border: none;
+font-size: 16px;
+background:linear-gradient(to right,#071952,#0766AD);
+color:#F3F3F3;
+}
+.button-devis:hover {
+background: linear-gradient(to right, #0766AD, #071952); 
+}
+.input-ShowSurface{
+border-radius: 10px;
+width: 25%;
+margin-left: 50px;
+margin-bottom: 20px;
+height: 45px;
+box-shadow: #226089 1px 3px 4px 1px ;
+padding: 27px;
+border: #0766AD;
+}
+.input-type{
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: #226089 1px 3px 4px 1px ;
+  border: #0766AD;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border: #0766AD;
+font-size: 16px;
+}
+
+
+
+
+
+
+}
+@media all and (min-width:790px){
+/*  PAge Devis*/
+.container-checkbox {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 60px;
+ 
+}
+
+.container-checkbox input {
+display: none;
+
+} 
+
+.container-checkbox svg {
+overflow: visible;
+}
+.p1checkbox{
+width: 100px;
+}
+
+.path {
+fill: none;
+stroke: rgb(85, 84, 84) ;
+stroke-width: 6;
+stroke-linecap: round;
+stroke-linejoin: round;
+transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+stroke-dasharray: 241 9999999;
+stroke-dashoffset: 0;
+
+
+}
+.container-checkbox input:checked ~ svg .path {
+stroke-dasharray: 70.5096664428711 9999999;
+stroke-dashoffset: -262.2723388671875;
+}
+.checkbox{
+margin-top: 0px;
+}
+.p-checkbox{
+color: #000000;
+margin-left: 20px;
+}
+.div1{
+display: flex;
+}
+
+.div-main{
+width: 60%;
+height: 40%;
+margin: 50px auto;
+padding: 50px;
+background-color: white; 
+border-radius: 15px;
+margin-top: 400px;
+box-shadow:  2px 5px 5px 2px;
+
+
+}
+.standard-height{
+height: 850px;
+}
+.nav-devis{
+background-image: url('/public/media/profil-image.jpg');
+position: absolute;
+width: 100%;
+height: 290px; 
+background-size: cover;
+margin-top:3px ;
+
+}
+.link-devis{
+color: white;
+background:linear-gradient(to right,#071952,#0766AD);
+text-decoration: none;
+padding: 10px;
+border-radius: 5px;
+padding-left: 40px;
+padding-right: 40px;
+margin-left: 1700px;
+
+
+}
+.link-devis:hover{
+color: white;
+background:linear-gradient(to right,#0766AD,#071952);
+
+}
+.PurtePro{
+font-size: 40px;
+margin-bottom: 190px;
+margin-right: 100px;
+}
+
+.input-Devis{
+border-radius: 20px;
+width: 400px;
+margin-left: 50px;
+margin-bottom: 20px;
+height: 45px;
+box-shadow: #226089 1px 3px 4px 1px ;
+padding: 27px;
+border: #0766AD;
+}
+.p1-devis,.h3-devis{
+text-align: center;
+color: #000000;
+}
+
+.table-devis {
+width: 800px;
+margin-left: 90px;
+}
+
+
+
+.td-devis {
+padding: 10px;
+color: #071952;
+font-size: 18px;
+display: flex;
+
+}
+
+
+
+#typeService,
+#typeNettoyage,
+#nomberIntervention
+{
+margin-left: 10px;
+border-radius: 8px;
+height: 50px;
+margin-bottom: 20px;
+background-color: white;
+border: #070606 1px solid;
+font-size: 15px;
+
+
+}
+
+
+
+
+.div1 {
+margin-top: 20px;
+
+}
+
+
+
+.p-checkbox {
+margin-right: 7px;
+}
+
+.checkbox {
+margin-right: 10px;
+fill: none;
+stroke: #000;
+stroke-width: 5;
+}
+
+
+#specificArea{
+font-size: 18px;
+}
+.button-devis{
+width: 950px;
+border-radius: 20px;
+height: 50px;
+border: none;
+font-size: 16px;
+background:linear-gradient(to right,#071952,#0766AD);
+color:#F3F3F3;
+}
+.button-devis:hover {
+background: linear-gradient(to right, #0766AD, #071952); 
+}
+.input-ShowSurface{
+border-radius: 10px;
+width: 25%;
+margin-left: 50px;
+margin-bottom: 20px;
+height: 45px;
+box-shadow: #226089 1px 3px 4px 1px ;
+padding: 27px;
+border: #0766AD;
+}
+.input-type{
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: #226089 1px 3px 4px 1px ;
+  border: #0766AD;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border: #0766AD;
+font-size: 16px;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+ 
 
 
 

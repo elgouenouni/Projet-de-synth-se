@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../CssStyles/Accueildevis.css";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function AccueilDevis(){
+    
   return(
     <div className='DIV'>
         <nav>
