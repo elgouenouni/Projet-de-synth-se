@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'
+import '../CssStyles/ProduitReservation.css'
 import { FaEnvelope,FaPhone,FaBuilding ,FaRegFileAlt,FaMapMarkerAlt} from 'react-icons/fa'
 function ProfileAdmin() {
     return (

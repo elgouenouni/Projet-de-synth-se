@@ -35,6 +35,13 @@ const Services = () => {
               <option value="maquete">maquete</option>
               {/* <option value="villas">villas</option> */}
          </select>
+         {/* <select onChange={(e)=>settitle(e.target.value)}>
+            <option selected value="rien"defaultValue >choisi une service</option>
+            <option value="appartement">appartement</option>
+              <option value="Bureau">Bureau</option>
+              <option value="villas">villas</option>
+              <option value="maquete">maquete</option>
+            </select> */}
         </div>
          {title === 'rien' ? (
           List.map((element, index) => (
