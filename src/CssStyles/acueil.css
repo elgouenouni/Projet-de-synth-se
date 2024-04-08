@@ -1,13 +1,18 @@
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* color: rgb(85, 84, 84); */
 }
-.imglogo{
+.divAIma{
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+.imglogoO{
   width: 350px;
   height: 190px;
   margin-left:-40px ;
   margin-top: -68px;
   position: absolute;
+  /* float: left; */
 }
 .li1{
   list-style-type: none;
@@ -115,7 +120,7 @@ body{
   position: relative;
 }
 .ul1{
-  margin-top: -30px;
+  margin-top: -55px;
   margin-left:  380px;
 }
 .div11{
@@ -138,7 +143,7 @@ body{
   margin-left:650px ;
   margin-top: 100px;
   height: 540px;
-
+  
 }
 .parag{
   margin-top: 190px;
@@ -148,11 +153,15 @@ body{
 }
 .pH{
   font-size: 12px;
+  line-height: 30px;
+  width: 500px;
 }
 .h11{
+  margin-top: 10px;
   font-size: 44px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
+  margin-bottom: 30px;
 }
 .learnmore{
   border: 1px  ;
@@ -163,7 +172,6 @@ body{
   height: 40px;
   width: 150px;
   margin-top: 30px;
-
 }
 .footerA{
   background-color:#141111;
@@ -172,6 +180,9 @@ body{
   margin-left: -10px;
   margin-right: -10px;
   margin-top: 60px;
+}
+.foterA{
+  margin-top: 100px;
 }
 .P1{
   color: white;
@@ -433,7 +444,7 @@ body{
 .imgPr1{
   height: 200px;
   width: 210px;
-  margin-right: 50px;
+  margin-right: 30px;
   margin-left: 20px;
   margin-top: 10px;
 }
@@ -668,7 +679,7 @@ body{
   box-shadow: 0 5px 10px rgb(182, 177, 177) ;
 }
 .imageP1{
-  width: 350px;
+  width: 100%;
   height: 230px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -691,4 +702,867 @@ body{
   text-align: center;
   margin-top: 350px;
   color: #000000;
+}
+/* =======  pour media de navbar ===== */
+label .btnic ,
+label .cancel  {
+  color: rgb(42, 40, 40);
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 800px;
+  margin-top: -50px;
+  display: none;
+}
+#check{
+  margin-left: 810px;
+  display: none;
+}
+
+
+/* ================ media bar des lien =================== */
+
+@media screen and (max-width:1210px) {
+  .li12{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .ul1{
+    margin-top: -55px;
+    margin-left:  250px;
+  }
+  .div11{
+    margin-left: 20px ;
+    padding-top: 20px;
+  }
+  .parag{
+    margin-top: 190px;
+    margin-left: 70px;
+    position: absolute;
+    color: black;
+  }
+  .imghome{
+    margin-left:500px ;
+    margin-top: 100px;
+    height: 540px;
+  
+  }
+  /* .mes{
+    margin-top: 50px;
+    height: 550px;
+    padding-top: 20px;
+    color: white;
+    margin-left: -40px;
+  } */
+
+  .buy{
+    margin-left: 20px;
+    text-align: center;
+    width:300px ;
+    float: left;
+  }
+  .onlineread{
+    margin-left: 40px;
+    text-align: center;
+    width:300px ;
+    float: left;
+  }
+  .web{
+    /* margin-left: 80px; */
+    text-align: center;
+    width:300px ;
+    margin-left: 700px;
+    padding-top:1px ;
+  }
+
+  .imgpeo{
+    height: 655px;
+    width: 400px;
+    margin-left: 50px;
+    float: left;
+    margin-right: 50px;
+  }
+  .imgPr1{
+    height: 200px;
+    width: 210px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .Tservice{
+    margin-left: 40px;
+    float: left;
+    margin-top: 140px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: 500px;
+  }
+  .divSeryn{
+    margin-left: 540px;
+    margin-top: 30px;
+  }
+  .cProduits{
+    height: 1100px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  .produitttt{
+    margin-top: 70px;
+    margin-left: 120px;
+  }
+  .poduit3{
+    margin-left: 300px;
+    width: 350px;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 10px;
+    height: 340px;
+    margin-top:30px ;
+    /* float: left; */
+    margin-bottom: 30px;
+  }
+  .poduit3:hover{
+    margin-bottom: 39px;
+    width: 350px;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 10px;
+    margin-top:20px ;
+    height: 340px;
+    box-shadow: 0 5px 10px rgb(182, 177, 177) ;
+  }
+  .produit2{
+    margin-left: 60px;
+    width: 350px;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 10px;
+    height: 340px;
+    float: left;
+    margin-bottom: 30px;
+  }
+  
+}
+@media screen and (max-width:1020px) {
+  .li12{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 70px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .ul1{
+    margin-top: -55px;
+    margin-left:  230px;
+  }
+  .imghome{
+    margin-left:480px;
+    margin-top: 100px;
+    height: 540px;
+    width: 500px;
+  }
+  .buy{
+    margin-left: 40px;
+    text-align: center;
+    width:260px ;
+    float: left;
+  }
+  .onlineread{
+    margin-left: 55px;
+    text-align: center;
+    width:260px ;
+    float: left;
+  }
+  .web{
+    /* margin-left: 80px; */
+    text-align: center;
+    width:260px ;
+    margin-left: 650px;
+    padding-top: 1px;
+  }
+  .imgPr1{
+    height: 150px;
+    width: 180px;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .imgpeo{
+    height: 590px;
+    width: 400px;
+    margin-left: 50px;
+    float: left;
+    margin-right: 50px;
+  }
+  
+  .produitttt{
+    margin-top: 70px;
+    margin-left: 50px;
+  }
+  .Tservice{
+    margin-left: 30px;
+    float: left;
+    margin-top: 140px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: 450px;
+  }
+  .divSeryn{
+    margin-left: 490px;
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+  .class{
+    margin-left: 50px;
+  }
+
+}
+@media screen and (max-width:967px) {
+  /* .container1{
+    background-color:rgb(194, 100, 100);
+    box-shadow: 0 0 8px  rgb(242, 245, 245) ;
+    height: 100px;
+    width: 102%;
+    margin: -10px;
+    padding-top: 10px;
+    color: black;
+    position: fixed;
+    z-index: 2;
+   
+  } */
+  .li12{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .ul1{
+    margin-top: -55px;
+    margin-left:  200px;
+  }
+  .imghome{
+    margin-left:480px;
+    margin-top: 100px;
+    height: 540px;
+    width: 450px;
+  }
+  .imgPr1{
+    height: 155px;
+    width: 170px;
+    margin-right: 20px;
+    margin-left: 2px;
+    margin-top: 10px;
+  }
+  .Tservice{
+    margin-left: 30px;
+    float: left;
+    margin-top: 140px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: 439px;
+    position: absolute;
+  }
+  .divSeryn{
+    margin-left: 420px;
+    margin-top: 30px;
+  }
+  .produitttt{
+    margin-top: 70px;
+    margin-left: 30px;
+  }
+  .class{
+    margin-left: 100px;
+  }
+  .icones{
+    margin-left: 30px;
+  }
+  
+}
+@media screen and (max-width:910px) {
+  
+  .li12{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .div11{
+    margin-left: 50px ;
+    padding-top: 20px;
+  }
+  
+  .ul1{
+    width: 100%;
+    height: 600px;
+    background-color: #ecdfe0;
+    color: white;
+    margin-left: 1px;
+    margin-top:   0px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    transition: all .7s;
+   
+  }
+  .li1{
+    display: block;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 20px;
+  }
+  .li13{
+    display: block;
+    margin-bottom: 30px;
+  }
+  .li14{
+    display: block;
+    margin-bottom: 30px;
+  }
+  label .btnic {
+    display: block;
+  }
+  .ul1{
+    display: none;
+    transition: all .7s;
+  }
+  #check:checked ~ .ul1{
+    display: block;
+  }
+  #check:checked ~ label .btnic{
+    display: none;
+  }
+  #check:checked ~  label .cancel{
+    display: block;
+  }
+
+  .imghome{
+    margin-left:470px;
+    margin-top: 100px;
+    height: 540px;
+    width: 400px;
+  }
+  .h11{
+    font-size: 41px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+  }
+  .buy{
+    margin-left: 40px;
+    text-align: center;
+    width:260px ;
+    float: left;
+  }
+  .onlineread{
+    margin-left: 25px;
+    text-align: center;
+    width:260px ;
+    float: left;
+  }
+  .web{
+    
+    text-align: center;
+    width:260px ;
+    margin-left: 600px;
+    padding-top: 1px;
+  }
+  .divSeryn{
+    margin-left: 390px;
+    margin-top: 25px;
+  }
+  .produitttt{
+    margin-top: 70px;
+    margin-left: 0px;
+  }
+  
+}
+@media screen and (max-width:900px) {
+  
+  label .btnic {
+    margin-left: 750px;
+    margin-top: -50px;
+  }   
+  label .cancel {
+    margin-left: 750px;
+    margin-top: -50px;
+  } 
+  #check{
+    margin-left: 810px;
+  }
+  .imghome{
+    margin-left:420px;
+    margin-top: 100px;
+    height: 540px;
+    width: 400px;
+  }
+  .buy{
+    margin-left: 40px;
+    text-align: center;
+    width:260px ;
+  }
+  .onlineread{
+    margin-left: 25px;
+    text-align: center;
+    width:260px ;
+  }
+  .web{
+    
+    text-align: center;
+    width:260px ;
+    margin-left: 600px;
+    padding-top: 1px;
+  }
+  .imgpeo{
+    height: 610px;
+    width: 350px;
+    margin-left: 50px;
+    float: left;
+    margin-right: 50px;
+  }
+  .imgPr1{
+    height: 150px;
+    width: 170px;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  
+}
+@media screen and (max-width:868px) {
+  .imghome{
+    margin-left:420px;
+    margin-top: 100px;
+    height: 540px;
+    width: 400px;
+  }
+  .buy{
+    margin-left: 150px;
+    text-align: center;
+    width:260px ;
+  }
+  .onlineread{
+    margin-left: 25px;
+    text-align: center;
+    width:260px ;
+    margin-bottom: 50px;
+  }
+  .web{
+    margin-left: 299px;
+    text-align: center;
+    width:300px ;
+    padding-top:1px ;
+    margin-top: 365px;
+  }
+  .cont{
+    margin-bottom: 20px;
+    margin-top: 200px;
+    padding-top: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .image{
+    height: 750px;
+  }
+  .Tservice{
+    margin-left: 40px;
+    float: left;
+    margin-top: 140px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: 430px;
+    position: absolute;
+  }
+  .divSeryn{
+    margin-left: 353px;
+    margin-top: 30px;
+  }
+  .pservice{
+    margin-left: -18px;
+    width: 320px;
+  }
+  .produitttt{
+    margin-top: 70px;
+    margin-left: 0px;
+  }
+  .poduit3{
+    margin-left: 300px;
+    width: 300px;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 10px;
+    height: 340px;
+    margin-top:30px ;
+    /* float: left; */
+    margin-bottom: 30px;
+  }
+  .poduit3:hover{
+    margin-bottom: 39px;
+    width: 300px;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 10px;
+    margin-top:20px ;
+    height: 340px;
+    box-shadow: 0 5px 10px rgb(182, 177, 177) ;
+  }
+  .produit2{
+    margin-left: 60px;
+    width: 300px;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 10px;
+    height: 340px;
+    float: left;
+    margin-bottom: 30px;
+  }
+  .produit1{
+    margin-left: 80px;
+    width: 300px;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 10px;
+    height: 340px;
+    float: left;
+    margin-bottom: 30px;
+  }
+  .produit1:hover,
+  .produit2:hover{
+    margin-top: -10px;
+    width: 300px;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 10px;
+    height: 340px;
+    box-shadow: 0 5px 10px rgb(182, 177, 177) ;
+  }
+  
+}
+@media screen and (max-width:840px) {
+ 
+  .Tservice{
+    margin-left: 40px;
+    float: left;
+    margin-top: 140px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: 430px;
+    position: absolute;
+  }
+  .divSeryn{
+    margin-left: 330px;
+    margin-top: 30px;
+  }
+  .cProduits{
+    margin-bottom: 200px;
+  }
+  
+}
+@media screen and (max-width:768px) {
+  
+  label .btnic {
+    margin-left: 650px;
+    margin-top: -50px;
+  }   
+  label .cancel {
+    margin-left: 650px;
+    margin-top: -50px;
+  } 
+  #check{
+    margin-left: 710px;
+  }
+  .h11{
+    font-size: 35px;
+  }
+  .imghome{
+    margin-left:350px;
+    margin-top: 100px;
+    height: 540px;
+    width: 400px;
+  }
+  .parag{
+    margin-left: 40px;
+  }
+  
+  .buy{
+    margin-left: 90px;
+  }
+  .web{
+    margin-left: 200px;
+    text-align: center;
+    width:300px ;
+    padding-top:1px ;
+    margin-top: 20px;
+  }
+  .imgpeo{
+    height: 0;
+    width: 0;
+  }
+  .cont{
+    margin-bottom: 20px;
+    margin-top: 200px;
+    padding-top: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 700px;
+    margin-left: 100px;
+  }
+  .imgPr1{
+    height: 200px;
+    width: 210px;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .Tservice{
+    margin-left: 70px;
+    float: none;
+    margin-top: 140px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: 600px;
+    position: relative;
+  }
+  .h1S{
+    float: none;
+    width: 600px;
+  }
+  .pservice{
+    float: none;
+    width: 600px;
+  }
+  .imageserv{
+    height: 950px;
+    
+  }
+  .cProduits{
+    margin-top: 600px;
+    margin-left: -30px;
+    margin-bottom: 200px;
+  }
+  .divSeryn{
+    margin-left: 100px;
+  }
+  .class{
+    margin-left: 20px;
+  }
+  .poduit3{
+    margin-left: 260px;
+  }
+ 
+}
+@media screen and (max-width:720px) {
+  label .btnic {
+    margin-left: 600px;
+    margin-top: -50px;
+  }   
+  label .cancel {
+    margin-left: 600px;
+    margin-top: -50px;
+  } 
+  #check{
+    margin-left: 710px;
+  }
+  .produit1{
+    margin-left: 220px;
+  }
+  .produit2{
+    margin-left: 220px;
+  }
+  .poduit3{
+    margin-left: 220px;
+  }
+  .cProduits{
+    margin-bottom: 400px;
+  }
+  .class{
+    margin-left: 70px;
+  }
+  .imghome{
+    margin-left:350px;
+    margin-top: 100px;
+    height: 540px;
+    width: 350px;
+  }
+  .cProduits{
+    margin-bottom: 600px;
+  }
+}
+@media screen and (max-width:650px) {
+  label .btnic {
+    margin-left: 550px;
+    margin-top: -50px;
+  }   
+  label .cancel {
+    margin-left: 550px;
+    margin-top: -50px;
+  } 
+  .imghome{
+    margin-left:300px;
+    margin-top: 100px;
+    height: 540px;
+    width: 350px;
+  }
+  .h11{
+    font-size: 30px;
+
+  }
+  .pH{
+    width: 350px;
+  }
+  .buy{
+    margin-left: 170px;
+    float: none;
+  }
+  .onlineread{
+    float: none;
+    margin-left: 170px;
+  }
+  .web{
+    margin-left: 150px;
+  }
+  .image{
+    height: 1000px;
+  }
+  .cont{
+    margin-top: 450px;
+    margin-left: 50px;
+  }
+  .pservice{
+    width: 500px;
+  }
+  .divSeryn{
+    margin-left: 50px;
+  }
+  .produit1{
+    margin-left: 170px;
+  }
+  .produit2{
+    margin-left: 170px;
+  }
+  .poduit3{
+    margin-left: 170px;
+  }
+  .class{
+    margin-left: 30px;
+  }
+  .cProduits{
+    margin-bottom: 600px;
+  }
+  .image{
+    height: 1050px;
+  }
+}
+@media screen and (max-width:580px) {
+  label .btnic {
+    margin-left: 500px;
+    margin-top: -50px;
+  }   
+  label .cancel {
+    margin-left: 500px;
+    margin-top: -50px;
+  } 
+  
+  .cProduits{
+    margin-bottom: 600px;
+  }
+}
+@media screen and (max-width:550px) {
+  .imghome{
+    margin-left:250px;
+    margin-top: 100px;
+    height: 540px;
+    width: 280px;
+  }
+  .h11{
+    font-size: 25px;
+  }
+  .pH{
+    width: 240px;
+    text-align:left;
+    
+  }
+  .buy{
+    margin-left: 120px;
+    float: none;
+  }
+  .onlineread{
+    float: none;
+    margin-left: 120px;
+  }
+  .web{
+    margin-left: 100px;
+  }
+  .cont{
+    margin-left: 20px;
+    width: 500px;
+  }
+  .imgPr1{
+    height: 170px;
+    width: 190px;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .pservice{
+    width: 450px;
+  }
+  .divSeryn{
+    margin-left: 10px;
+    width: 200px;
+  }
+  .cProduits{
+    margin-bottom: 650px;
+  }
+  
+  
+}
+@media screen and (max-width:530px) {
+  label .btnic {
+    margin-left: 410px;
+    margin-top: -50px;
+  }   
+  label .cancel {
+    margin-left: 410px;
+    margin-top: -50px;
+  } 
+  .imgPr1{
+    margin-left: 0px;
+  }
+  .Tservice{
+    margin-left: 20px;
+  }
+  .pservice{
+    width: 440px;
+  }
+  .divSeryn{
+    margin-left: -30px;
+  }
+  .buy{
+    margin-left: 100px;
+    float: none;
+  }
+  .onlineread{
+    float: none;
+    margin-left: 100px;
+  }
+  .web{
+    margin-left: 90px;
+  }
+  .produit1{
+    margin-left: 100px;
+  }
+  .produit2{
+    margin-left: 100px;
+  }
+  .poduit3{
+    margin-left: 100px;
+  }
+  .class{
+    margin-left: 9px;
+  }
+  .icones{
+    margin-left: -2px;
+  }
+  
+ 
 }

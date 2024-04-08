@@ -1,0 +1,95 @@
+/* contact.css */
+
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+
+.contact-info {
+  background-color: #f0f8ff; /* Bleu clair */
+  padding: 20px 0;
+}
+#contactt{
+  color: #3cbbe1;
+}
+.contact-info p {
+  margin-bottom: 10px;
+  color: #76c9e7; /* Vert */
+  font-size: 16px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #43b7e1; /* Vert foncé pour les icônes */
+  font-size: 18px;
+}
+
+.contact-form {
+  max-width: 450px;
+  margin-top: 8%;
+ 
+  border: 1px solid #ccc; /* Ajoute une bordure grise de 1px */
+  border-radius: 10px; /* Arrondit les coins de la boîte */
+  box-shadow: 0 0 10px rgba(15, 15, 15, 0.1); /* Ajoute une ombre légère */
+  padding: 20px; /* Espacement intérieur */
+}
+
+ #contactt{
+  margin-top: 30%;
+ }
+
+h3 {
+  color: #73ccdf; /* Vert pour le titre */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#button1 {
+  background-color: #00c3ff ;
+  margin-top: 5%;
+}
+
+.contact-image {
+  text-align: center; /* Centrer l'image horizontalement */
+  margin-bottom: 20px; /* Espacement entre l'image et le formulaire */
+}
+
+.contact-image img {
+  max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de sa div parente */
+  height: auto; /* Ajuste la hauteur de l'image en fonction de sa largeur */
+}
+
+.IMGG {
+  margin-top: 35%;
+}
+.container11{
+  background-color: white;
+  padding-bottom: 100px;
+  margin-bottom: -100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container11{
+    max-width: 90%;
+    margin-left: 8%; 
+  }
+  .contact-form {
+    max-width: 100%; /* Adjust the maximum width for smaller screens */
+    margin-top: 20px; /* Adjust the top margin for spacing */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+.form-control{
+  max-width: 90%; 
+}
+  #contactt {
+    margin-top: 10%; /* Adjust the top margin for the title */
+  }
+  .formulaie{
+    width: 400px;
+  }
+
+  .IMGG {
+    display: none; /* Adjust the top margin for the image */
+  }
+}

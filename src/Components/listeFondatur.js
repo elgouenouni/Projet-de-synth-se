@@ -1,34 +1,42 @@
 import React from "react";
 import "../CssStyles/listeFondateurStyle.css"
 import { BsSearch,BsPersonFillCheck,BsPersonFillX ,BsPersonFillAdd,BsPersonCircle} from "react-icons/bs";
-
+import {AiOutlineMenu,AiOutlineClose} from "react-icons/ai";
 
 export default function ListeClient(){
   return( 
     <div>
       <header className="header">
         <div className="logo">
-        <img class="imglogo" src="logo.png" alt="Logo" />
+          <img class="imglogo" src="logo.png" alt="Logo" />
           <a className="a1"  href="#">PuretéPro</a>
-          <div className="search_box">
+          <div className="search_boxx">
             <input type="text" placeholder="Search PuretéPro"/>
             <i><BsSearch /></i>
           </div>
         </div>
     
-        <div className="header-icons">
+        <div className="header-icons">  
           <i className="fas fa-bell"></i>
           <div className="account">
             {/* <img src="./pic/img.jpg" alt=""/> */}
-            <h4>Jhon Viek</h4>
+            <h6>Jhon Viek</h6>
             <p className="iconeAdmin"><BsPersonCircle/></p>
            
           </div>
         </div>
       </header>
-      <div className="container">
+      <div className="containerListefon">
+            
         <nav>
+           
           <div className="side_navbar">
+            <input type="checkbox" id="checke" />
+            <label for="checke">
+              <AiOutlineMenu className="btnice" />
+              <AiOutlineClose className="cancele"/>
+              
+            </label><br/>
             <span>Main Menu</span>
             <a href="#" className="active">Acceuil</a>
             <a href="#">Profil</a>
@@ -53,10 +61,11 @@ export default function ListeClient(){
 
           <div className="history_lists">
             <div className="list1">
-              {/* <div className="row"> */}
-                <h4 className="h4list">La listes des Prestataires </h4>
+              <div className="rowListeCli">
+                <h4 >La listes des Prestataires </h4>
                 
-              {/* </div> */}
+              </div>
+              <div className="wrap">
               <table>
                 <thead>
                   <tr>
@@ -209,6 +218,7 @@ export default function ListeClient(){
                   
                 </tbody>
               </table>
+            </div>
             </div>
           </div>
         </div>

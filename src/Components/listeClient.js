@@ -10,7 +10,7 @@ export default function ListeClient(){
         <div className="logo">
         <img class="imglogo" src="logo.png" alt="Logo" />
           <a className="a1"  href="#">PuretéPro</a>
-          <div className="search_box">
+          <div className="search_boxx">
             <input type="text" placeholder="Search PuretéPro"/>
             <i><BsSearch /></i>
           </div>
@@ -20,13 +20,13 @@ export default function ListeClient(){
           <i className="fas fa-bell"></i>
           <div className="account">
             {/* <img src="./pic/img.jpg" alt=""/> */}
-            <h4>Jhon Viek</h4>
+            <h6>Jhon Viek</h6>
             <p className="iconeAdmin"><BsPersonCircle/></p>
            
           </div>
         </div>
       </header>
-      <div className="container">
+      <div className="containerAdmine">
         <nav>
           <div className="side_navbar">
             <span>Main Menu</span>
@@ -48,7 +48,7 @@ export default function ListeClient(){
           <div className="promo_card">
             <h1>Bienvenu dans la liste<br/> des clients  </h1>
             {/* <span>les types des clients : </span><br/> */}
-            <div className="divicone">
+            <div className="diviconee">
                 <p className="iconeCFidéle"> &nbsp; &nbsp; <BsPersonFillCheck /> </p>&nbsp;Client fidéle
                 <p className="iconeCnormale"> &nbsp; &nbsp; <BsPersonFillAdd /></p>&nbsp;Client normale 
                 <p className="iconeCblack"> &nbsp; &nbsp; <BsPersonFillX /></p>&nbsp;Client blackList
@@ -59,9 +59,12 @@ export default function ListeClient(){
 
           <div className="history_lists">
             <div className="list1">
-              <div className="row">
+              <div className="rowListeCli">
                 <h4>La listes des Clients </h4>
               </div>
+              <div className="wrapC">
+
+             
               <table>
                 <thead>
                   <tr>
@@ -199,6 +202,7 @@ export default function ListeClient(){
                   
                 </tbody>
               </table>
+            </div>
             </div>
           </div>
         </div>

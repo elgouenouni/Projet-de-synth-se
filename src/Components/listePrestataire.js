@@ -1,16 +1,18 @@
 import React from "react";
 import "../CssStyles/listePrestataireStyle.css"
 import { BsSearch,BsPersonFillCheck,BsPersonFillX ,BsPersonFillAdd,BsPersonCircle} from "react-icons/bs";
+import ListeClient from "./listeClient"
 
 
-export default function ListeClient(){
+export default function ListeClientt(){
   return( 
     <div>
+      {window.location.pathname === '/listeClient' && <ListeClient />}
       <header className="header">
         <div className="logo">
         <img class="imglogo" src="logo.png" alt="Logo" />
           <a className="a1"  href="#">PuretéPro</a>
-          <div className="search_box">
+          <div className="search_boxx">
             <input type="text" placeholder="Search PuretéPro"/>
             <i><BsSearch /></i>
           </div>
@@ -20,13 +22,13 @@ export default function ListeClient(){
           <i className="fas fa-bell"></i>
           <div className="account">
             {/* <img src="./pic/img.jpg" alt=""/> */}
-            <h4>Jhon Viek</h4>
+            <h6>Jhon Viek</h6>
             <p className="iconeAdmin"><BsPersonCircle/></p>
            
           </div>
         </div>
       </header>
-      <div className="container">
+      <div className="containerAdmine">
         <nav>
           <div className="side_navbar">
             <span>Main Menu</span>
@@ -35,7 +37,7 @@ export default function ListeClient(){
             <a href="#">réservation</a>
             <a href="#">Préstataires</a>
             <a href="#">Fondateurs</a>
-            <a href="#">Clients</a>
+            <a href="/listeClient">Clients</a>
     
             
           </div>
@@ -53,8 +55,9 @@ export default function ListeClient(){
 
           <div className="history_lists">
             <div className="list1">
-              {/* <div className="row"> */}
+              {/* <div className="rowListeCli"> */}
                 <h4 className="h4list">La listes des Prestataires </h4>
+              {/* </div> */}
                   <select className="selectServ">
                     <option selected>Service Nettoyage </option>
                     <option>Service bureau </option>
@@ -66,7 +69,7 @@ export default function ListeClient(){
                     <option>Service imeuble </option>
                   </select>
                 
-              {/* </div> */}
+            <div className="wrapC">
               <table>
                 <thead>
                   <tr>
@@ -219,6 +222,7 @@ export default function ListeClient(){
                   
                 </tbody>
               </table>
+            </div>
             </div>
           </div>
         </div>

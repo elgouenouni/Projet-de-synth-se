@@ -1,13 +1,13 @@
 import React from "react";
 import "../CssStyles/acueil.css";
 import { BsFillPersonCheckFill ,BsFacebook,BsShop,BsUnion} from "react-icons/bs";
-import { AiFillSmile ,AiFillInstagram ,AiFillTwitterCircle ,AiOutlineWindows ,AiOutlineHome} from "react-icons/ai";
+import { AiFillSmile ,AiFillInstagram ,AiFillTwitterCircle ,AiOutlineWindows ,AiOutlineHome,AiOutlineMenu,AiOutlineClose} from "react-icons/ai";
 import { FiSlack  } from "react-icons/fi";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from "react-bootstrap";
 import { AiFillHome } from "react-icons/ai";
@@ -18,6 +18,7 @@ export default function Accueil() {
   const services=useRef(null)
   const produits=useRef(null)
   const projets=useRef(null)
+  const navigate=useNavigate()
 
 
   function scrollToSection(elementRef){
@@ -26,38 +27,51 @@ export default function Accueil() {
       behavior:"smooth"
     })
   }
-
+  function moreservice(){
+    navigate("/serviecs")
+  }
+  function moreproduit(){
+    navigate("/produits")
+    
+  }
 
   
   
   return (
-    <div>
+    <div className="divAIma">
       
 
       <header>
         <div class="container1">
           <div class="div11">
-            <img class="imglogo" src="logo.png" alt="Logo"/>
+            <img class="imglogoO" src="logo.png" alt="Logo"/>
             <Link class="li2" to="/">PuretéPro</Link>
           </div>
+          <input type="checkbox" id="check" />
+            <label for="check">
+            <AiOutlineClose className="cancel"/>
+              <AiOutlineMenu className="btnic" />
+              
+            </label>
           <ul class="ul1">
           <li class="li1"><Link class="a" to="/">Accueil</Link></li>
-            <li class="li1"><Link class="a" onClick={()=>scrollToSection(services)} to="/serviecs">Service</Link></li>
-            <li class="li1"><Link class="a" onClick={()=>scrollToSection(produits)} to="/produits">Produit</Link></li>
+            <li class="li1"><Link class="a" onClick={()=>scrollToSection(services)} to="">Service</Link></li>
+            <li class="li1"><Link class="a" onClick={()=>scrollToSection(produits)} to="">Produit</Link></li>
             <li class="li1"><Link class="a" to="/Reservations">Reservation</Link></li>
             <li class="li1"><Link class="a"onClick={()=>scrollToSection(projets)} to="">Projet</Link></li>
             <li class="li1"><Link class="a" to="/Contact">Contact</Link></li>
             <div class="li12">
             <li class="li13"><Link class="a1" to="/login">Login</Link></li>
             <li class="li14"><Link class="a2" to="/incri">inscrire</Link></li>
-            </div>
             
+            </div>
+           
           </ul>
         </div>
       </header>  
       <div className="parag">
         <h1 className="h11">Entreprise Nettoyage<br /> et Entretien </h1>
-        <p className="pH"> Transformez votre espace en un havre de propreté et Optez pour<br /> la tranquillité d'esprit avec notre équipe de nettoyage<br /> qualifiée et dévouée.</p>
+        <p className="pH"> Transformez votre espace en un havre de propreté et Optez pour la tranquillité d'esprit avec notre équipe de nettoyage qualifiée et dévouée.</p>
         <button class="bbHome" onClick={()=>scrollToSection(lire)}> Lire plus </button>
       </div>
           
@@ -97,14 +111,14 @@ export default function Accueil() {
           <p className="pPRO">Grâce à une planification minutieuse et une exécution assidue, nous avons <br/>
             réalisé des projets exceptionnels qui ont abouti à des résultats remarquables<br/>
             et nous avons réussi à livrer des projets de haute qualité, surpassant les attentes<br/>
-            et générant des résultats positifs.<a className="A" href="#">lire plus</a></p>
+            et générant des résultats positifs.<Link className="A" to="/Projet">lire plus</Link></p>
             <img className="imgPr1"  src="Screenshot 2024-02-10 233438.png " alt=""></img>
             <img className="imgPr1"  src="Screenshot 2024-02-10 233455.png " alt=""></img>
             <img className="imgPr1"  src="Screenshot 2024-02-10 233239.png " alt=""></img>
             <img className="imgPr1"  src="Screenshot 2024-02-10 233301.png" alt=""></img>
             
         </div>
-      </div><br/>
+      </div><br/> 
 
       <div className="slide" ref={services}>
       <img className="imageserv" src="20220221005602_cleaning_industry.jpg" alt="Image Accueil"  /><br />
@@ -112,7 +126,7 @@ export default function Accueil() {
             <p style={{color:"rgb(250, 211, 39)",fontWeight:"bolder"}}>__Nos Services</p>
             <h1 className="h1S">Offrir le meilleur Cleaning <br/>Services </h1>
             <p className="pservice">Nous proposons tous types de solutions de nettoyage pour toutes  les petites et grandes entreprises, organisations et foyers.</p>
-            <button className="b1" >MORE SERVICES</button>
+            <button className="b1" onClick={moreservice} >MORE SERVICES</button>
           </div><br/>
           <div className="divSeryn">
               <Carousel>
@@ -189,7 +203,7 @@ export default function Accueil() {
             <p>____  Services</p>
             <h1 className="h1po">Offrir le meilleur<br/>Cleaning Produits </h1>
             <p className="pproduit">NExplorez notre gamme complète de produits de nettoyage haut de gamme, <br/>spécialement conçus pour offrir des solutions efficaces et durables à tous<br/> vos besoins en matière d'entretien.</p>
-            <button className="b1PP" >Plus Produits</button>
+            <button className="b1PP" onClick={moreproduit} >Plus Produits</button>
           </div><br/>
           <div className="produitttt">
             <div className="produit1">
@@ -209,7 +223,7 @@ export default function Accueil() {
             </div>
             
           </div><br/>
-          <p className="pp">Fournir un ensemble complet de produits pour les entreprises et les particuliers</p>
+          
       </div> 
     </div>
 
@@ -217,7 +231,6 @@ export default function Accueil() {
 
    
     <Footer/>
-  
    
   </div>
   );
