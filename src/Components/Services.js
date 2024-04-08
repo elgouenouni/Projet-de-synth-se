@@ -45,12 +45,13 @@ const Services = () => {
         </div>
          {title === 'rien' ? (
           List.map((element, index) => (
-        <div className="services_container container grid">
+        <div className="services_container">
           <div className="services_content">
             
-            <h3 className="services_title"> {element.title}</h3> 
+          
             <img src={element.image} className="image_service"  />
             <hr/>
+            <h3 className="services_title"> {element.title}</h3> 
             <p> Une entreprise intervenant dans le cadre d'un nettoyage de bureaux propose plusieurs services complémentaires comme le dépoussiérage, le rangement, le débarras d'encombrants, et le vidage des corbeilles. Ces services peuvent s’étendre aux zones de repos, salles de réunion, ascenseurs ou halls d’accueil &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="services_button" onClick={() => toggleTab(1)}><i className="uil uil-arrow-right services_button-icon">lire plus< FaShare/></i> </span>
             </p>
@@ -92,12 +93,13 @@ const Services = () => {
           ) )):(
            
               liste.map((element, index) => (
-            <div className="services_container container grid">
+            <div className="services_container ">
               <div className="services_content">
                 
-                <h3 className="services_title"> {element.title}</h3> 
+               
                 <img src={element.image} className="image_service"  />
                 <hr/>
+                <h3 className="services_title"> {element.title}</h3> 
                 <p> Une entreprise intervenant dans le cadre d'un nettoyage de bureaux propose plusieurs services complémentaires comme le dépoussiérage, le rangement, le débarras d'encombrants, et le vidage des corbeilles. Ces services peuvent s’étendre aux zones de repos, salles de réunion, ascenseurs ou halls d’accueil &nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="services_button" onClick={() => toggleTab(1)}><i className="uil uil-arrow-right services_button-icon">lire plus< FaShare/></i> </span>
             </p>
