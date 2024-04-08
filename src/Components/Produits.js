@@ -13,7 +13,7 @@ function Produit() {
              <h2 class="title"> NOS PRODUITS </h2>
 
             <div class="btn-conteiner">
-                <Link class="btn-content" to="/Contact">
+                {/* <Link class="btn-content" to="/Contact">
                     <span class="btn-title">CONTACTEZ-NOUS</span>
                     <span class="icon-arrow">
                         <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
@@ -24,7 +24,7 @@ function Produit() {
                         </g>
                         </svg>
                     </span> 
-                </Link>
+                </Link> */}
             </div>
         <div class="div1">
             <div class="cardproduit">
