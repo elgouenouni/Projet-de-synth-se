@@ -7,7 +7,7 @@ import Login from "./Components/login";
 import Inscription from "./Components/inscription";
 import Produits from "./Components/Produits"
 import Reservations from "./Components/Reservations";
-import Contact from "./Components/contact";
+import Contact from "./Components/Contact";
 import Services from "./Components/Services";
 import ListeClient from "./Components/listeClient";
 import ListeFondateur from "./Components/listeFondatur";

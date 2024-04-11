@@ -21,8 +21,8 @@ function Reservation() {
                     <input placeholder="entrez Address" type="text"  class="inputreservationA"/>
                     <p class="heading">Votre demande concerne :</p>
                     <select class="selectreservation">
-                        <option>en fois </option>
-                        <option> par semaine </option>
+                        <option> en fois </option>
+                        <option> par semainee </option>
                         <option> par mois</option>
                     </select>
                     <table>

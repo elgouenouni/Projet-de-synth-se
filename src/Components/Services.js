@@ -27,7 +27,7 @@ const Services = () => {
         <span className="section_subtitle">ce que j'offre</span>
       </Fade>
       <div className="container mt-2" >
-       <select class="form-select" aria-label="Default select example" onChange={(e)=>settitle(e.target.value)}  >
+       <select class="form-select" aria-label="Default select example" onChange={(e)=>settitle(e.target.value)} id='selectservice'  >
             <option selected value="rien"defaultValue >choisi une service</option>
              <option value="appartement">appartement</option>
               <option value="Bureau">Bureau</option>
@@ -35,13 +35,7 @@ const Services = () => {
               <option value="maquete">maquete</option>
               {/* <option value="villas">villas</option> */}
          </select>
-         {/* <select onChange={(e)=>settitle(e.target.value)}>
-            <option selected value="rien"defaultValue >choisi une service</option>
-            <option value="appartement">appartement</option>
-              <option value="Bureau">Bureau</option>
-              <option value="villas">villas</option>
-              <option value="maquete">maquete</option>
-            </select> */}
+     
         </div>
          {title === 'rien' ? (
           List.map((element, index) => (
