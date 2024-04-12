@@ -15,7 +15,10 @@ import ListePrestataire from "./Components/listePrestataire";
 import Devis from "./Components/Devis";
 import AccueilDevis from "./Components/AccuielDevis";
 import ProfilDevis from "./Components/ProfilDevis";
-
+import Loginfondateur from "./Components/login-fondateur"
+import Admine from "./Components/Admin"
+import Detail from "./Components/Detail"
+import ProfileAdmin from "./Components/ProfileAdmin"
 
 export default function App(){
 
@@ -34,11 +37,13 @@ export default function App(){
           <Route path="/serviecs" element={<Services />} />
 
            {/* lespace admine */}
-
+           <Route path="/Detail" element={<Detail/>}/>
+           <Route path="/Admine" element={<Admine/>}/>
+           <Route path="/ProfileAdmin" element={<ProfileAdmin/>}/>
           <Route path="/listeClient" element={<ListeClient/>}/>
           <Route path="/listeFonsa" element={<ListeFondateur/>}/>
           <Route path="/ListePrest" element={<ListePrestataire/>}/>
-
+          <Route path="/Loginfondateur" element={<Loginfondateur/>}/>
            {/* Espace Fondateur */}
 
           <Route path="/accueilDevis" element={<AccueilDevis/>}/>
