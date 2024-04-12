@@ -30,7 +30,7 @@ function Connexion() {
           </div>
           <div className="col">
             <div>
-              <img id="hhhhh" src="Screenshot 2024-02-09 131326.png" alt="Profile Image" />
+              <img id="hhhhh" src="Screenshot 2024-02-09 131326.png" alt='profile image' />
             </div>
           </div>
         </div>
