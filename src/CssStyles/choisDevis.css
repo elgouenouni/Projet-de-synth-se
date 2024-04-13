@@ -1,0 +1,23 @@
+.DIV{
+    border: 1px solid rgb(31, 26, 87);
+    width: 1200px;
+    height: 500px;
+    margin-left: 6%;
+    margin-top: 3%;
+}
+#idbutton{
+    width: 100px;
+    height: 38px;
+}
+#idbutton2{
+    width: 100px;
+    margin-top: 6%;
+}
+.divbu{
+    margin-left: 76%;
+}
+
+.h33{
+    margin-top: 1%;
+margin-left: 45%;
+}
