@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 function Reservation() {
     return (
-        <div>
+        <div  className="servicesbackgand">
             <Navigation/>
         <div className='pageREs'>
             <div class="div2reservation">
@@ -26,7 +26,7 @@ function Reservation() {
                         <option> par mois</option>
                     </select>
                     <table>
-                    <div class="div1reservation">
+                    <div class="divrreservation">
                         
                         <label class="containerreservation">
                             <p class="p1p">Bureaux:&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -51,7 +51,7 @@ function Reservation() {
                             </svg>
                         </label>
                         </div>
-                        <div class="div1reservation">
+                        <div class="divrreservation">
                         <label class="containerreservation">
                             <p class="p1p">maison:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> <input type="checkbox"/>
                             <svg viewBox="0 0 64 64" height="30px" width="20px" class="checkbox">
@@ -74,7 +74,7 @@ function Reservation() {
                         
                         </label>
                         </div>
-                        <div class="div1reservation">
+                        <div class="divrreservation">
                   
                      
                         <label class="containerreservation">

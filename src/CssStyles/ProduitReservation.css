@@ -8,6 +8,13 @@
 .div1reservation{
   display: flex;
   background-color:#cff1f1;
+  /* margin-left: -100px; */
+  
+}
+.divrreservation{
+  display: flex;
+  background-color:#cff1f1;
+  margin-left: -100px;
   
 }
 .div2reservation{
@@ -402,7 +409,7 @@
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
     box-shadow: 0px 0px 20px -18px;
     background-color:#cff1f1;
-    margin-left:10px;
+    margin-left:-0px;
     padding: 0px 0px 0px 0px;
   }
   .inputreservation {
