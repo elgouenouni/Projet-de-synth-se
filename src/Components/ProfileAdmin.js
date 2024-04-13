@@ -4,6 +4,7 @@
 import React from 'react';
 import '../CssStyles/ProduitReservation.css'
 import { FaEnvelope,FaPhone,FaBuilding ,FaRegFileAlt,FaMapMarkerAlt} from 'react-icons/fa'
+import ActivitesDevis from './activitesDevis';
 function ProfileAdmin() {
     return (
         <div>
@@ -74,15 +75,8 @@ function ProfileAdmin() {
             <div className='divprofiladmin'>
                <h1>activités</h1>
                <hr/>
-               <div class='div1'>
-               <p className='pactivite'>***************************************************************** </p>
-               <span className='spanactivite'>23/02/2024 14:57 MA</span>
-               </div>
-               <div class='div1'>
-               <p className='pactivite'>*****************************************************************  </p>
-               <span className='spanactivite'>23/02/2024 14:57 MA</span>
-               </div>
-               
+            
+               <ActivitesDevis/>
             </div>
            
            
