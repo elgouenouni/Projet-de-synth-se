@@ -124,7 +124,7 @@ export default function Accueil() {
       <img className="imageserv" src="20220221005602_cleaning_industry.jpg" alt="Image Accueil"  /><br />
       <div className="Tservice">
             <p style={{color:"rgb(250, 211, 39)",fontWeight:"bolder"}}>__Nos Services</p>
-            <h1 className="h1S">Offrir le meilleur Cleaning <br/>Services </h1>
+            <h1 className="h1S" style={{color:"white"}}>Offrir le meilleur Cleaning <br/>Services </h1>
             <p className="pservice">Nous proposons tous types de solutions de nettoyage pour toutes  les petites et grandes entreprises, organisations et foyers.</p>
             <button className="b1" onClick={moreservice} >MORE SERVICES</button>
           </div><br/>
