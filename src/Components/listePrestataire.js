@@ -2,9 +2,23 @@ import React from "react";
 import "../CssStyles/listePrestataireStyle.css"
 import { BsSearch,BsPersonFillCheck,BsPersonFillX ,BsPersonFillAdd,BsPersonCircle} from "react-icons/bs";
 import ListeClient from "./listeClient"
+import { useState ,useEffect} from "react";
+import axios from "axios";
 
 
 export default function ListeClientt(){
+
+  const [listeprestataire , setlisteprestataire]=useState()
+  useEffect(()=>{
+    axios.get("http://127.0.0.1:8000/api/prestataire")
+    .then(response => {
+      const data = response.data;
+      setlisteprestataire(data);
+    })
+    .catch(error => console.error('Error fetching cleints:', error));
+  },[])
+
+
   return( 
     <div>
       {window.location.pathname === '/listeClient' && <ListeClient />}
@@ -30,7 +44,7 @@ export default function ListeClientt(){
       </header>
       <div className="containerAdmine">
         <nav>
-          <div className="side_navbar">
+          <div className="sideInavbar">
             <span>Main Menu</span>
             <a href="#" className="active">Acceuil</a>
             <a href="#">Profil</a>
@@ -47,7 +61,7 @@ export default function ListeClientt(){
           
           
           
-          <div className="promo_card">
+          <div className="promo_cardClient">
             <h1>Bienvenu dans la liste<br/> des Prestataires  </h1>
             <button>Ajouter Prestataire</button>
             
@@ -70,29 +84,30 @@ export default function ListeClientt(){
                   </select>
                 
             <div className="wrapC">
-              <table>
+              <table className="tableClienI">
                 <thead>
                   <tr>
                     <th>CIN</th>
                     <th>Nom Complet</th>
                     <th>Telephone</th>
-                    <th>Salaire</th>
                     <th>Situation</th>
                     <th> &nbsp;&nbsp;&nbsp;&nbsp;Détail</th>
                     <th> &nbsp;&nbsp;&nbsp;&nbsp;Supprimer</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
+                  {listeprestataire && listeprestataire.map((element,index)=>
+                    <tr>
+                      <td>{element.cin}</td>
+                      <td>{element.nom} {element.prenom}</td>
+                      <td>{element.telephone}</td>
+                      <td> <p className={element.situation == "disponible" ? "dispo" : "indispo" }>{element.situation}</p></td>
+                      <td><button className="buttonMod">Détail</button></td>
+                      <td><button className="ButtonRes">supp</button></td>
                   </tr>
-                  <tr>
+                  )}
+                  
+                  {/* <tr>
                     <td>EE123879</td>
                     <td>Nom Complet</td>
                     <td>0653728392 </td>
@@ -218,7 +233,7 @@ export default function ListeClientt(){
                     <td><p className="dispo">disponible</p></td>
                     <td><button className="buttonMod">Détail</button></td>
                     <td><button className="ButtonRes">supp</button></td>
-                  </tr>
+                  </tr> */}
                   
                 </tbody>
               </table>

@@ -120,7 +120,7 @@ body{
   position: relative;
 }
 .ul1{
-  margin-top: -55px;
+  margin-top: -40px;
   margin-left:  380px;
 }
 .div11{
@@ -1324,7 +1324,7 @@ label .cancel  {
   }
   .h1S{
     float: none;
-    width: 600px;
+    width: 600px
   }
   .pservice{
     float: none;
@@ -1565,4 +1565,18 @@ label .cancel  {
   }
   
  
+}
+.divAjoutF{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  margin-top: -10px;
+}
+.XFond{
+  float: right;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
