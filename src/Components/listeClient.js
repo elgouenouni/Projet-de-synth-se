@@ -1,9 +1,22 @@
-import React from "react";
+import React,{useEffect ,useState} from "react";
 import "../CssStyles/listePrestataireStyle.css"
+import "../CssStyles/listeFondateurStyle.css"
+import axios from "axios";
+
 import { BsSearch,BsPersonFillCheck,BsPersonFillX ,BsPersonFillAdd,BsPersonCircle} from "react-icons/bs";
 
 
 export default function ListeClient(){
+  const [listeClient , setlisteClient]=useState()
+
+  useEffect(()=>{
+    axios.get("http://127.0.0.1:8000/api/client")
+    .then(response => {
+      const data = response.data;
+      setlisteClient(data);
+    })
+    .catch(error => console.error('Error fetching cleints:', error));
+  },[])
   return( 
     <div>
       <header className="header">
@@ -28,13 +41,13 @@ export default function ListeClient(){
       </header>
       <div className="containerAdmine">
         <nav>
-          <div className="side_navbar">
+          <div className="sideInavbar">
             <span>Main Menu</span>
             <a href="#" className="active">Acceuil</a>
             <a href="#">Profil</a>
             <a href="#">Réservations</a>
             <a href="#">Nos Préstataires</a>
-            <a href="#">Nos fondateur</a>
+            <a href="">Nos fondateur</a>
             <a href="#">Nos Clients</a>
     
             
@@ -45,7 +58,7 @@ export default function ListeClient(){
           
           
           
-          <div className="promo_card">
+          <div className="promo_cardClient">
             <h1>Bienvenu dans la liste<br/> des clients  </h1>
             {/* <span>les types des clients : </span><br/> */}
             <div className="diviconee">
@@ -65,10 +78,11 @@ export default function ListeClient(){
               <div className="wrapC">
 
              
-              <table>
+              <table className="tableClienI">
                 <thead>
                   <tr>
                     <th>Type Client</th>
+                    <th>Cin</th>
                     <th>Nom Complet</th>
                     <th>Adress</th>
                     <th>Email</th>
@@ -77,15 +91,20 @@ export default function ListeClient(){
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><p className="iconeCFidéle"> &nbsp; &nbsp; <BsPersonFillCheck /></p></td>
-                    <td>chaaoula imane </td>
-                    <td>SYBA Marrakech </td>
-                    <td>email@gmail.com</td>
-                    <td>0653728392</td>
-                    <td><button className="ButtonRes">Reservation</button></td>
-                  </tr>
-                  <tr>
+                  
+                    {listeClient && listeClient.map((element,index)=>
+                      <tr>
+                        <td><p className="iconeCnormale"> &nbsp; &nbsp; <BsPersonFillAdd /></p></td>
+                        <td>{element.cin } </td>
+                        <td>{element.nom } {element.prenom }  </td>
+                        <td>{element.adress } </td>
+                        <td>{element.nom }email</td>
+                        <td>{element.tele }</td>
+                        <td><button className="ButtonRes">Reservation</button></td>
+                    </tr>
+                    )}
+                    
+                  {/* <tr>
                     <td><p className="iconeCnormale"> &nbsp; &nbsp; <BsPersonFillAdd /></p></td>
                     <td>chaaoula imane</td>
                     
@@ -198,7 +217,7 @@ export default function ListeClient(){
                     <td>email@gmail.com</td>
                     <td>0653728392</td>
                     <td><button className="ButtonRes">Reservation</button></td>
-                  </tr>
+                  </tr> */}
                   
                 </tbody>
               </table>
