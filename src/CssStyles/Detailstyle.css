@@ -1,5 +1,5 @@
 @media (min-width:910px){
-    .container{
+    .containerD{
         background-color: #daefef;
         border-radius: 15px;
         padding: 20px;
@@ -7,10 +7,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 99%;
         
     }
     
-    .info-client{
+    .info-clientD{
         border: #cbe0e0;
         border-radius: 10px;
         border-style: solid;
@@ -19,7 +20,7 @@
     
     }
     
-    .form{
+    .formD{
         padding: 5px;
         display: flex;
         flex-direction: row;
@@ -28,7 +29,7 @@
     
     }
     
-    .input{
+    .inputD{
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -45,7 +46,7 @@
         color: rgb(130, 129, 129);
     }
     
-    .info-expert{
+    .info-expertD{
         border: #cbe0e0;
         border-radius: 10px;
         border-style: solid;
@@ -62,14 +63,14 @@
         color: rgb(130, 129, 129);
     }
     
-    .expert{
+    .expertD{
         display: flex;
         flex-direction: column;
         
         
     }
     
-    .form2{
+    .form2D{
         padding: 5px;
         display: flex;
         flex-direction: row;
@@ -99,13 +100,13 @@
       font-size: 15px;
     
     } */
-    .button{
+    .buttonD{
         margin-left: 85%;
         /* margin-right: 5%; */
         
     }
     
-    .Accepter{
+    .AccepterD{
         background-color: rgb(96, 96, 245);
         color: white;
         border: none;
@@ -115,7 +116,7 @@
         font-size: 15px;
     }
     
-    .Annuler{
+    .AnnulerD{
         background-color: red;
         color: white;
         border: none;
@@ -126,7 +127,7 @@
         margin-top: 5px;
     }
     
-    .Info-employe{
+    .Info-employeD{
         border: #cbe0e0;
         border-radius: 10px;
         border-style: solid;
@@ -134,12 +135,12 @@
         margin-top: 20px;
     }
     
-    .employe{
+    .employeD{
         display: flex;
         flex-direction: column;
     }
     
-    .form3{
+    .form3D{
         padding: 5px;
         display: flex;
         flex-direction: row;
@@ -147,7 +148,7 @@
         flex-wrap: wrap;
     
     }
-    .buttonA{
+    .buttonAD{
         display: flex;
       padding: 5px;
       padding-left: 45px;
@@ -166,7 +167,7 @@
         
       
     
-    .devis{
+    .devisD{
         
         display: flex;
         padding: 5px;
@@ -184,7 +185,7 @@
         margin-left: 45%;
       }
     
-    table{
+    .tableD{
         background: #fff;
         padding: 10px;
         
@@ -195,18 +196,19 @@
         padding-left: 85px;
         margin: 30px;
         margin-right: 20%;
-        margin-left: 20%;
+        margin-left: 10%;
+        width: 80%;
       }
       /* table td, th{
         padding: 0.2rem 0.8rem;
       } */
-      table th{
+      .tableD th{
         font-size: 25px;
         padding-bottom: 15px;
         color: #0f8383;
         padding-left: 10px;
       }
-      table td{
+      .tableD td{
         font-size: 15px;
         color: #044a49;
         padding: 5px;
@@ -214,7 +216,7 @@
         
       }
     
-      .supprimer{
+      .supprimerD{
         background-color: rgb(228, 4, 4);
         color: white;
         border: none;
@@ -225,7 +227,7 @@
         
       }
     
-      .valider{
+      .validerD{
         background-color: rgb(96, 96, 245);
         color: white;
         border: none;
@@ -241,7 +243,7 @@
 /* Pour les écrans d'une largeur maximale de 768 pixels */
 @media only screen and (max-width: 768px) {
     /* Ajoutez vos styles CSS ici */
-    .container {
+    .containerD {
         /* Exemple de style à appliquer pour les écrans plus petits */
         padding: 10px;
         margin: 10px;
@@ -251,7 +253,7 @@
 }
 
 @media (max-width:910px){
-    .container{
+    .containerD{
         background-color: #daefef;
         border-radius: 15px;
         padding: 20px;
@@ -262,7 +264,7 @@
         
     }
     
-    .info-client{
+    .info-clientD{
         border: #cbe0e0;
         border-radius: 10px;
         border-style: solid;
@@ -271,7 +273,7 @@
     
     }
     
-    .form{
+    .formD{
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -280,7 +282,7 @@
     
     }
     
-    .input{
+    .inputD{
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -297,7 +299,7 @@
         color: rgb(130, 129, 129);
     }
     
-    .info-expert{
+    .info-expertD{
         border: #cbe0e0;
         border-radius: 10px;
         border-style: solid;
@@ -314,14 +316,14 @@
         color: rgb(130, 129, 129);
     }
     
-    .expert{
+    .expertD{
         display: flex;
         flex-direction: column;
         
         
     }
     
-    .form2{
+    .form2D{
         padding: 5px;
         display: flex;
         flex-direction: row;
@@ -351,7 +353,7 @@
       font-size: 15px;
     
     } */
-    .button{
+    .buttonD{
         margin-left:5%;
         /* margin-right: 5%; */
         display: flex;
@@ -361,7 +363,7 @@
         
     }
     
-    .Accepter{
+    .AccepterD{
         background-color: rgb(96, 96, 245);
         color: white;
         border: none;
@@ -372,7 +374,7 @@
         margin-right: 5px;
     }
     
-    .Annuler{
+    .AnnulerD{
         background-color: red;
         color: white;
         border: none;
@@ -383,7 +385,7 @@
         /* margin-top: 5px; */
     }
     
-    .Info-employe{
+    .Info-employeD{
         border: #cbe0e0;
         border-radius: 10px;
         border-style: solid;
@@ -391,12 +393,12 @@
         margin-top: 20px;
     }
     
-    .employe{
+    .employeD{
         display: flex;
         flex-direction: column;
     }
     
-    .form3{
+    .form3D{
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -404,7 +406,7 @@
         flex-wrap: wrap;
     
     }
-    .buttonA{
+    .buttonAD{
         display: flex;
       padding: 5px;
       padding-left: 45px;
@@ -423,7 +425,7 @@
         
       
     
-    .devis{
+    .devisD{
         
         display: flex;
         padding: 5px;
@@ -445,7 +447,7 @@
         font-size: 15px;
       }
     
-    table{
+    .tableD{
         background: #fff;
         padding: 10px;
         
@@ -461,12 +463,12 @@
       /* table td, th{
         padding: 0.2rem 0.8rem;
       } */
-      table th{
+      .tableD th{
         font-size: 25px;
         padding-bottom: 15px;
         color: #0f8383;
       }
-      table td{
+      .tableD td{
         font-size: 15px;
         color: #044a49;
         padding: 5px;
@@ -474,7 +476,7 @@
         
       }
     
-      .supprimer{
+      .supprimerD{
         background-color: rgb(228, 4, 4);
         color: white;
         border: none;
@@ -485,7 +487,7 @@
         
       }
     
-      .valider{
+      .validerD{
         background-color: rgb(96, 96, 245);
         color: white;
         border: none;
@@ -498,7 +500,7 @@
       }
 }
 @media(max-width:770px){
-    table{
+    .tableD{
         background: #fff;
         padding: 10px;
         
@@ -516,7 +518,7 @@
       /* table td, th{
         padding: 0.2rem 0.8rem;
       } */
-      table th{
+      .tableD th{
         font-size: 20px;
         padding-bottom: 15px;
         color: #0f8383;
@@ -524,14 +526,14 @@
         
         
     }
-      table td{
+      .tableD td{
         font-size: 13px;
         color: #044a49;
         padding: 5px;
         padding-left: 15px;
         
       }
-      .supprimer{
+      .supprimerD{
         background-color: rgb(228, 4, 4);
         color: white;
         border: none;
