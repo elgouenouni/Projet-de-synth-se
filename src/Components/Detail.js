@@ -13,24 +13,24 @@ export default function Detail(){
                     <div class="formD">
                         <div class="inputD">
                             <b> Nom du client : </b>
-                            <input type="text"/>
+                            <input type="text" className="input-Detail" />
             
                         </div>
                         <div class="inputD">
                             <b> Prénom du client : </b>
-                            <input type="text"/>
+                            <input type="text" className="input-Detail"/>
                         </div>
                         <div class="inputD">
                             <b>Téléphone du client : </b>
-                            <input type="text"/>
+                            <input type="text" className="input-Detail"/>
                         </div>
                         <div class="inputD">
                             <b>E-mail du client :</b>
-                            <input type="text"/>
+                            <input type="text" className="input-Detail"/>
                         </div>
                         <div id="input4D" class="inputD">
                             <b>Adresse du client : </b>
-                            <input type="text"/>
+                            <input type="text" className="input-Detail"/>
                         </div>
                     </div>
                 </div>
@@ -41,11 +41,11 @@ export default function Detail(){
                         <div class="form2D">
                             <div class="inputD">
                                 <b> Date de la visite : </b>
-                                <input type="date"/>
+                                <input type="date" className="input-Detail"/>
                             </div>
                             <div class="inputD">
                                 <b> Choisissez un expert : </b>
-                                <select>
+                                <select className="select-Detail">
                                     <option>expert1</option>
                                     <option>expert2</option>
                                     <option>expert3</option>
@@ -53,7 +53,7 @@ export default function Detail(){
                             </div>
                             <div class="inputD">
                                 <b>l'expert disponible est:</b>
-                                <input type="text"/>
+                                <input type="text" className="input-Detail"/>
                             </div>
                         </div>
                         <div >
@@ -73,11 +73,11 @@ export default function Detail(){
                         <div class="form3D">
                             <div class="inputD">
                                 <b> Date de la visite : </b>
-                                <input type="date"/>
+                                <input type="date" className="input-Detail"/>
                             </div>
                             <div class="inputD">
                                 <b> Choisissez le service : </b>
-                                <select>
+                                <select className="select-Detail">
                                     <option>service1</option>
                                     <option>service2</option>
                                     <option>service3</option>
@@ -85,7 +85,7 @@ export default function Detail(){
                             </div>
                             <div class="inputD">
                                 <b>Choisissez un employé : </b>
-                                <select>
+                                <select className="select-Detail">
                                     <option>employe1</option>
                                     <option>employe2</option>
                                     <option>employe3</option>
