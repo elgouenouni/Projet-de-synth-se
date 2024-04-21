@@ -5,22 +5,7 @@
   margin-right: 150px;
   margin-left: -10px;
 }
-.div1reservation{
-  display: flex;
-  background-color:#cff1f1;
-  /* margin-left: -100px; */
-  
-}
-.divrreservation{
-  display: flex;
-  background-color:#cff1f1;
-  margin-left: -100px;
-  
-}
-.div2reservation{
-  display: flex;
-  
-}
+
 
 .title {
     color: #BC5F6A;
@@ -377,6 +362,27 @@
     margin-top: 0px;
     
   }
+
+  /* .div1reservation{
+    display: flex;
+    background-color:#cff1f1;
+    /* margin-left: -100px; */
+    
+  /* }  */
+  .divrreservation{
+    display: flex;
+    background-color:#cff1f1;
+    margin-left: -100px;
+    /* width:100%; */
+    
+  }
+  .tablereservation{
+    background-color:#cff1f1;
+  }
+  .div2reservation{
+    display: flex;
+    
+  }
   .imagereservation{
     margin-left: 100px;
     margin-top: 0px;
@@ -414,9 +420,10 @@
   }
   .inputreservation {
     height:5px;
-    width: 100%;
+    width: 46%;
     /* margin-right: -70px; */
     padding: 12px;
+    /* margin: 8px; */
  
     border-radius: 10px;
     font-size: 12px;
@@ -431,6 +438,8 @@
   .inputreservationA{
     height: 5px;
     padding: 12px;
+    /* margin: 8px; */
+ 
     font-size: 12px;
     border-radius: 10px;
     border: 1.5px solid #625fbc;
@@ -448,6 +457,7 @@
   .containerreservation {
     cursor: pointer;
     display: flex;
+    background-color: #cff1f1;
   }
   
   .containerreservation input {
@@ -675,6 +685,19 @@
   padding-top: 100px;
   margin-left: -50px;
 }
+@media screen and (max-width: 1000px) {
+  
+  
+  .divrreservation{
+    display: flex;
+    background-color:#cff1f1;
+    /* margin-left: 100px; */
+    /* width:100%; */
+    
+  }
+
+
+}
 @media screen and (max-width: 996px) {
   
   #formreservation {
@@ -697,7 +720,13 @@
     margin-top: 0px;
     
   }
-  
+  .divrreservation{
+    display: flex;
+    background-color:#cff1f1;
+    /* margin-left: 100px; */
+    /* width:100%; */
+    
+  }
 
   .imagereservation{
     margin-left: 100px;
@@ -730,12 +759,13 @@
     margin-top: 0px;
     
   }
+
   
-  .div1reservation{
+  /* .divrreservation{
     display: block;
     /* margin-right: 150px;
     margin-left: -10px; */
-  }
+  /* } */ 
   .imagereservation{
     margin-left: 100px;
     margin-top: 0px;
@@ -768,11 +798,11 @@
     
   }
   
-  .div1reservation{
+  /* .divrreservation{
     display: block;
-    /* margin-right: 150px;
-    margin-left: -10px; */
-  }
+    margin-right: 150px;
+    margin-left: -10px;
+  } */
   .imagereservation{
     margin-left: 100px;
     margin-top: 0px;
@@ -876,6 +906,12 @@
     margin-top: 0px;
     
   }
+  .tablereservation{
+    background-color:#cff1f1;
+    /* width: 100%; */
+    margin-left:90px;
+    /* margin-right:110px ; */
+  }
   
   
   .imagereservation{
@@ -909,7 +945,13 @@
     margin-top: 0px;
     
   }
+  .tablereservation{
+    background-color:#cff1f1;
+   
+    /* margin-left:100px; */
   
+    font-size: smaller;
+  }
   
   .imagereservation{
     margin-left:0px;
@@ -920,10 +962,41 @@
  
  
 }
+@media screen and (max-width: 901px) {
+  
+  
+  .tablereservation{
+    background-color:#cff1f1;
+    /* width: 100%; */
+    margin-left:100px;
+    width:110px;
+    font-size: smaller;
+  }
+  
+
+ 
+ 
+}
+@media screen and (max-width: 1009px) {
+  
+ 
+  .tablereservation{
+    background-color:#cff1f1;
+    /* width: 100%; */
+    /* margin-left:100px; */
+  }
+  
+  
+ 
+}
 @media screen and (max-width: 792px) {
   agereservation{
        margin-left: 100px;
        margin-top: 0px;
        height:530px;
        border-radius: 5px;
-     }}
+     }
+    
+    
+    
+    }

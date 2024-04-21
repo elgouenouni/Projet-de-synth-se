@@ -13,7 +13,7 @@ export default function Navigation(){
             <Link class="li2" to="/">PuretéPro</Link>
           </div>
           <input type="checkbox" id="check" />
-          <label for="check">
+          <label htmlFor="check">
             <AiOutlineClose className="cancel"/>
             <AiOutlineMenu className="btnic" />
           </label>
