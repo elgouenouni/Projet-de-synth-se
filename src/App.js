@@ -13,13 +13,12 @@ import ListeClient from "./Components/listeClient";
 import ListeFondateur from "./Components/listeFondatur";
 import ListePrestataire from "./Components/listePrestataire";
 import Devis from "./Components/Devis";
-import AccueilDevis from "./Components/AccuielDevis";
-import ProfilDevis from "./Components/ProfilDevis";
+import AccueilFondateur from "./Components/AccuielFondateur";
+import ProfilFondateur from "./Components/ProfilFondateur";
 import Loginfondateur from "./Components/login-fondateur"
 import Admine from "./Components/Admin"
 import Detail from "./Components/Detail"
-import ProfileAdmin from "./Components/ProfileAdmin"
-
+import ProfilClient from "./Components/ProfileClient";
 export default function App(){
 
 
@@ -39,16 +38,16 @@ export default function App(){
            {/* lespace admine */}
            <Route path="/Detail" element={<Detail/>}/>
            <Route path="/Admine" element={<Admine/>}/>
-           <Route path="/ProfileAdmin" element={<ProfileAdmin/>}/>
+           <Route path="/ProfileClient" element={<ProfilClient/>}/>
           <Route path="/listeClient" element={<ListeClient/>}/>
           <Route path="/listeFonsa" element={<ListeFondateur/>}/>
           <Route path="/ListePrest" element={<ListePrestataire/>}/>
           <Route path="/Loginfondateur" element={<Loginfondateur/>}/>
            {/* Espace Fondateur */}
 
-          <Route path="/accueilDevis" element={<AccueilDevis/>}/>
+          <Route path="/accueilDevis" element={<AccueilFondateur/>}/>
           <Route path="/Devis" element={<Devis/>}/>
-          <Route path="/ProfilDevis" element={<ProfilDevis/>} />
+          <Route path="/ProfilDevis" element={<ProfilFondateur/>} />
           
         </Routes>
       </Router>

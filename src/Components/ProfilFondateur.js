@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../CssStyles/ProfilDevis.css";
+import '../CssStyles/ProfilFondateur.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { FaEnvelope,FaPhone,FaBuilding ,FaRegFileAlt,FaMapMarkerAlt} from 'react-icons/fa'
-export default function ProfilDevis(){
+export default function ProfilFondateur(){
     const[showForm,setshowForm]=useState();
     function handelForm(){
         setshowForm(!showForm);
     }
     return(
         <div className="mainprofil">
-            <Link to="/accueilDevis" className="linkProfil">Retour</Link>
+            <Link to="/accueilDevis" className="linkProfil"><img src="/media/retour.png" width="3%"/></Link>
             <div className='div2'>
                 <div className='div3'>
                     <FaEnvelope style={{ marginTop: 4}}/> &nbsp;&nbsp;&nbsp;
@@ -36,6 +37,7 @@ export default function ProfilDevis(){
              
        {showForm&&(
           <form action="" method="post" id="form">
+                   <h4 className="h4-Profilfon">Remplir le formulaire</h4>
                 <table className="table table-borderless mt-5">
                   
                    <tr>

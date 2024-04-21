@@ -7,28 +7,28 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 export default function Admin(){
     return(
        
-        <body>
-      <header class="header">
-        <div class="logo">
-          <img class="imglogo" src="c:\Users\dell\Pictures\logo.png" alt="Logo" />
-          <a class="a1"  href="#">PuretéPro</a>
-          <div class="search_box">
+        <body class='bodyS'>
+      <header class="headerS">
+        <div class="logoS">
+          <img class="imglogoS" src="c:\Users\dell\Pictures\logo.png" alt="Logo" />
+          <a class="a1S"  href="#">PuretéPro</a>
+          <div class="search_boxS">
             <input type="text" placeholder="Search PuretéPro"/>
             <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
           </div>
         </div>
     
-        <div class="header-icons">
+        <div class="header-iconsS">
           <i class="fas fa-bell"></i>
-          <div class="account">
+          <div class="accountS">
             <img src="./pic/img.jpg" alt=""/>
             <h4>Jhon Viek</h4>
           </div>
         </div>
       </header>
-      <div class="container">
-        <nav>
-          <div class="side_navbar">
+      <div class="containerS">
+        <nav class="navS">
+          <div class="side_navbarS">
             <span>Menu principale</span>
             <a href="#" class="active">Acceuil</a>
             <a href="#">Profil</a>
@@ -41,21 +41,21 @@ export default function Admin(){
           </div>
         </nav>
     
-        <div class="main-body">
-          <h2 class="h1-body">Acceuil</h2>
-          <div class="promo_card">
+        <div class="main-bodyS">
+          <h2 class="h1-bodyS">Acceuil</h2>
+          <div class="promo_cardS">
             <h1>Welcome to PuretéPro</h1>
             <span>Lorem ipsum dolor sit amet.</span>
             <button>Learn More</button>
           </div>
     
-          <div class="history_lists">
-            <div class="list1">
-              <div class="row">
-                <h4 class="h4">Les réservations récentes</h4>
-                <a class="aT" href="#">See all</a>
+          <div class="history_listsS">
+            <div class="list1S">
+              <div class="rowS">
+                <h4 class="h4S">Les réservations récentes</h4>
+                <a class="aTS" href="#">See all</a>
               </div>
-              <table class="table">
+              <table class="tableS">
                 <thead>
                   <tr>
                     <th>#</th>
