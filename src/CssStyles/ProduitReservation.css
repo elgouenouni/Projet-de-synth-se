@@ -372,12 +372,13 @@
   .divrreservation{
     display: flex;
     background-color:#cff1f1;
-    margin-left: -100px;
+    /* margin-left: -100px; */
     /* width:100%; */
     
   }
   .tablereservation{
     background-color:#cff1f1;
+    margin-left:-10px;
   }
   .div2reservation{
     display: flex;
@@ -835,7 +836,7 @@
    
     
     .div1reservation{
-      display: block;
+      /* display: block; */
       /* margin-right: 150px;
       margin-left: -10px; */
     }
@@ -909,7 +910,7 @@
   .tablereservation{
     background-color:#cff1f1;
     /* width: 100%; */
-    margin-left:90px;
+    margin-left:-10px;
     /* margin-right:110px ; */
   }
   
@@ -968,8 +969,8 @@
   .tablereservation{
     background-color:#cff1f1;
     /* width: 100%; */
-    margin-left:100px;
-    width:110px;
+    margin-left:-10px;
+    /* width:110px; */
     font-size: smaller;
   }
   
