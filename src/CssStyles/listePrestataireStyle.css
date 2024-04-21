@@ -94,31 +94,10 @@
 }
 
 /* Side menubar section */
-nav{
+/* nav{
   background: #fff;
-}
-.side_navbar{
-  padding: 1px;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  background: #fff;
-  height: 100%;
-  margin-top: 70px;
-  margin-left: 10px;
-}
-.side_navbar span{
-  color: #044a49;
-  margin: 1rem 3rem;
-  font-size: 12px;
-}
-.side_navbar a{
-  width: 100%;
-  padding: 0.8rem 3rem;
-  font-weight: 500;
-  font-size: 15px;
-  color:#044a49 ;
-}
+} */
+
 .links{
   margin-top: 5rem;
   display: flex;
@@ -126,12 +105,6 @@ nav{
 }
 .links a{
   font-size: 13px;
-}
-.side_navbar a:hover{
-  background: rgb(235, 235, 235);
-}
-.side_navbar .active{
-  border-left: 2px solid #044a49;
 }
 
 /* Main Body Section */
@@ -155,22 +128,23 @@ margin-top:
   margin-left: -120px;
 }
 .promo_cardClient{
-  width: 120%;
+  width: 100%;
   color: #fff;
   margin-top: 10px;
   border-radius: 8px;
   padding: 0.5rem 1rem 1rem 3rem;
   background: #044a49;
-  margin-left: -130px;
 }
-.promo_cardClient h1, .promo_card span, button{
+.promo_cardClient h1, .promo_cardClient span, button{
   margin: 10px;
+  color: white;
 }
-.promo_card button{
+.promo_cardClient button{
   display: block;
   padding: 6px 12px;
   border-radius: 5px;
   cursor: pointer;
+  color: #044a49;
 }
 .history_lists{
   display: flex;
@@ -199,26 +173,29 @@ margin-top:
   margin-left: 30px;
   color: #8e9191;
 }
-table{
+.tableClienI{
   background: #fff;
   padding: 1rem;
   text-align: left;
   border-radius: 10px;
   width: 100%;
-  
+  padding-top: 20px;
   
 }
-table td, th{
+.tableClienI td, th{
   padding: 0.2rem 0.8rem;
   color: black;
 }
-table th{
+.tableClienI th{
   font-size: 15px;
+  padding-top: 20px;
+  padding-left: 30px;
 }
-table td{
+.tableClienI td{
   font-size: 11px;
   color: #044a49;
   margin-right: 20px;
+  padding-left: 30px;
 }
 
 
@@ -397,7 +374,7 @@ table td{
   .main-body{
     width: 600px;
   }
-  table{
+  .tableClienI{
     width: 120%;
   }
   
@@ -413,7 +390,7 @@ table td{
   .wrapC{
     width: 640px;
   }
-  table{
+  .tableClienI{
     width: 120%;
   }
   .header{
@@ -425,10 +402,10 @@ table td{
   .main-body{
     width: 500px;
   }
-  table{
+  .tableClienI{
     width: 120%;
   }
-  .promo_card h1{
+  .promo_cardClient h1{
     font-size: 20px;
   }
   .iconeCFidéle ,
@@ -436,10 +413,10 @@ table td{
   .iconeCblack{
     font-size: 20px;
   }
-  table th{
+  .tableClienI th{
     font-size: 12px;
   }
-  table td{
+  .tableClienI td{
     font-size: 10px;
     color: #044a49;
     margin-right: 20px;
@@ -461,7 +438,7 @@ table td{
   .ButtonRes{
     padding: 5px 13px;
   }
-  .promo_card{
+  .promo_cardClient{
     width: 520px;
   }
 }

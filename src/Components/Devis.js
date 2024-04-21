@@ -43,15 +43,18 @@ function Devis() {
         const { name, value } = event.target;
         setSelectedInputs(prevState => ({
             ...prevState,
-            [name]: value
+            [selectedOption]: {
+                ...prevState[selectedOption],
+                [name]: value
+            }
         }));
     }
     
     return (
         <div className='main'>
-            <Link to="/accueilDevis" className='link-devis'>Retour</Link>
+            <Link to="/accueilDevis" className='link-devis'><img src="/media/retour.png" width="2.5%"/></Link>
             <nav className='nav-devis'>
-                <img src="/media/logo (1).png" width="260px" id='img' style={{ marginBottom: '190px' }} />
+                <img src="/media/logo (1).png" width="260px" id='img'/>
                 <h1 className='PurtePro'>PurtéPro</h1>
             </nav>
             <div className='div-main'>
@@ -90,20 +93,7 @@ function Devis() {
                                   
                                 </td>
                             </tr>
-                            <tr className='tr-devis'>
-                                <td className='td-devis'>
-                                    <img src='/media/icon2.png' width='30px' /> &nbsp; &nbsp; <label htmlFor="typeNettoyage" id="labelDevis">Nombre d'intervention par semaine :</label>
-                                </td>
-                                <td>
-                                    <select id='nomberIntervention' name="nomberIntervention">
-                                        <option value="Fréquence">Fréquence</option>
-                                        <option value="Journalier">Journalier(5j/Sem)</option>
-                                        <option value="plusieur fois">plusieur fois par semaine(2à3j/Sem )</option>
-                                        <option value="1 fois ">1 fois par semaine(5j/Sem)</option>
-                                        <option value="Occasinnelle">Occasinnelle</option>
-                                    </select>
-                                </td>
-                            </tr>
+                          
 
                             <tr className='tr-devis'>
                                 <td className='td-devis'>
@@ -221,7 +211,7 @@ function Devis() {
                         </label>
                     </div>
 
-                    <button className='button-devis'> Valider </button>
+                    <button className='button-devis'> Envoyer </button>
                 </form>
             </div>
         </div>

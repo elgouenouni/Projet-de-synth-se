@@ -10,11 +10,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
+.bodyS{
   background: #daefef;
 }
 
-.header{
+.headerS{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,25 +23,25 @@ body{
   background: #fff;
 }
 
-.logo{
+.logoS{
   display: flex;
   align-items: center;
 }
 
-.logo a{
+.logoS a{
   color: black;
   font-size: 18px;
   font-weight: 600;
   margin: 2rem 8rem 2rem 2rem;
 }
 
-.search_box{
+.search_boxS{
   display: flex;
   align-items: center;
   
 }
 
-.search_box input{
+.search_boxS input{
   padding: 9px;
   width: 250px;
   background: #daefef;
@@ -49,7 +49,7 @@ body{
   border-bottom-left-radius: 5px;
 }
 
-.search_box i{
+.search_boxS i{
   padding: 0.66rem;
   cursor: pointer;
   color: #fff0f0;
@@ -58,29 +58,29 @@ body{
   border-bottom-right-radius: 5px;
 }
 
-.header-icons{
+.header-iconsS{
   display: flex;
   align-items: center;
 }
 
-.header-icons i{
+.header-iconsS i{
   margin-right: 2rem;
   cursor: pointer;
 }
 
-.header-icons .account{
+.header-iconsS .accountS{
   width: 130px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header-icons .account img{
+.header-iconsS .accountS img{
   width: 35px;
   height: 35px;
   cursor: pointer;
   border-radius: 50%;
 }
-.container{
+.containerS{
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
@@ -89,61 +89,61 @@ body{
 }
 
 /* Side menubar section */
-nav{
+.navS{
   background: #fff;
 }
-.side_navbar{
+.side_navbarS{
   padding: 1px;
   display: flex;
   flex-direction: column;
 }
-.side_navbar span{
+.side_navbarS span{
   color: #044a49;
   margin: 1rem 3rem;
   font-size: 12px;
 }
-.side_navbar a{
+.side_navbarS a{
   width: 100%;
   padding: 0.8rem 3rem;
   font-weight: 500;
   font-size: 15px;
   color:#044a49 ;
 }
-.links{
+.linksS{
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
 }
-.links a{
+.linksS a{
   font-size: 13px;
 }
-.side_navbar a:hover{
+.side_navbarS a:hover{
   background: rgb(235, 235, 235);
 }
-.side_navbar .active{
+.side_navbarS .active{
   border-left: 2px solid #044a49;
 }
 
 /* Main Body Section */
-.main-body{
+.main-bodyS{
   width: 100%;
   padding: 1rem;
 }
 
-.imglogo{
+.imglogoS{
   width: 100px;
   height: 100px;  
 }
-.a1{
+.a1S{
   margin-top: 0%;
 }
 
-.h1-body{
+.h1-bodyS{
   margin-left: 10%;
   color:rgb(1, 82, 82) ;
 }
 
-.promo_card{
+.promo_cardS{
   width: 80%;
   color: rgb(1, 82, 82);
   margin-top: 10px;
@@ -154,10 +154,10 @@ nav{
   background-image: url();
   /* background-repeat: no-repeat; */
 }
-.promo_card h1, .promo_card span, button{
+.promo_cardS h1, .promo_cardS span, button{
   margin: 10px;
 }
-.promo_card button{
+.promo_cardS button{
   display: block;
   padding: 6px 12px;
   border-radius: 5px;
@@ -168,18 +168,18 @@ nav{
   align-items: center;
   justify-content: space-between;
 } */
-.row{
+.rowS{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0;
   /* width: 165%; */
 }
-.aT{
+.aTS{
   margin-right: 10%;
   color: rgb(1, 82, 82);
 }
-table{
+.tableS{
   background: #fff;
   padding: 1rem;
   text-align: left;
@@ -201,20 +201,20 @@ table td{
 
 
 /* Sidebar Section */
-.sidebar{
+.sidebarS{
   width: 15%;
   padding: 2rem 1rem;
   background: #fff;
 }
-.sidebar h4{
+.sidebarS h4{
   margin-bottom: 1.5rem;
 }
-.sidebar .balance{
+.sidebarS .balanceS{
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
-.balance .icon{
+.balanceS .iconS{
   color: white;
   font-size: 20px;
   border-radius: 6px;
@@ -222,17 +222,17 @@ table td{
   padding: 1rem;
   background: #daefef;
 }
-.balance .info h5{
+.balanceS .infoS h5{
   font-size: 16px;
 }
-.balance .info span{
+.balanceS .infoS span{
   font-size: 14px;
   color: #044a49;
 }
-.balance .info i{
+.balanceS .infoS i{
   margin-right: 2px;
 }
-.imglogo{
+.imglogoS{
   width: 250px;
   height: 150px;
   margin-left: -39px;
@@ -240,17 +240,17 @@ table td{
   margin-bottom: -20px;
 }
 
-.h4{
+.h4S{
   margin-left: 10%;
   color: rgb(1, 82, 82);
 }
 
 @media(max-width:700px){
-    .container{
+    .containerS{
         display: flex;
         flex-direction: column;
     }
-    .sidebar{
+    .sidebarS{
         width: 2%;
     }
     /* table{
@@ -271,21 +271,21 @@ table td{
         font-size: 10px;
         color: #044a49;
       } */
-      .logo a{
+      .logoS a{
         color: black;
         font-size: 15px;
         font-weight: 600;
         margin: 2rem 8rem 2rem 2rem;
       }
       
-      .search_box{
+      .search_boxS{
         display: flex;
         align-items: center;
         margin-left: -10%;
         
       }
       
-      .search_box input{
+      .search_boxS input{
         padding: 9px;
         width: 150px;
         background: #daefef;
@@ -294,7 +294,7 @@ table td{
         
       }
       
-      .search_box i{
+      .search_boxS i{
         padding: 0.66rem;
         cursor: pointer;
         color: #fff0f0;
@@ -303,23 +303,23 @@ table td{
         border-bottom-right-radius: 5px;
       }
       
-      .header-icons{
+      .header-iconsS{
         display: flex;
         align-items: center;
       }
       
-      .header-icons i{
+      .header-iconsS i{
         margin-right: 2rem;
         cursor: pointer;
       }
       
-      .header-icons .account{
+      .header-iconsS .accountS{
         width: 80px;
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
-      .header-icons .account img{
+      .header-iconsS .accountS img{
         width: 25px;
         height: 25px;
         cursor: pointer;
@@ -327,7 +327,7 @@ table td{
         margin-right: 20%;
       }
   }
-  .header{
+  .headerS{
     display: flex;
     
     

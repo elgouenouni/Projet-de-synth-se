@@ -1,9 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../CssStyles/listeFondateurStyle.css"
 import { BsSearch,BsPersonFillCheck,BsPersonFillX ,BsPersonFillAdd,BsPersonCircle} from "react-icons/bs";
 import {AiOutlineMenu,AiOutlineClose} from "react-icons/ai";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function ListeClient(){
+  const navigate=useNavigate()
+  const [listefondateur , setlistefondateur ]=useState()
+  const [ajou ,setajou]=useState(false)
+
+  useEffect(()=>{
+    axios.get("http://127.0.0.1:8000/api/fondateur")
+    .then(response => {
+      const data = response.data;
+      setlistefondateur(data);
+    })
+    .catch(error => console.error('Error fetching cleints:', error));
+  },[])
+
+
+  function suppretionFondat(id){
+    axios.delete(`http://127.0.0.1:8000/api/fondateur/${id}`)
+    .then(response => {
+      alert("fondateur bien supprimer")
+    })
+    .catch(error => console.error('Error supprition de fondateur :', error));
+    // alert( "bien supprimer"+id)
+  }
+
+  function ajouterFondateur(){
+    setajou(true)
+  }
+
+
   return( 
     <div>
       <header className="header">
@@ -28,9 +58,9 @@ export default function ListeClient(){
       </header>
       <div className="containerListefon">
             
-        <nav>
+        <nav className="navI">
            
-          <div className="side_navbar">
+          <div className="sideInavbar">
             <input type="checkbox" id="checke" />
             <label for="checke">
               <AiOutlineMenu className="btnice" />
@@ -53,9 +83,8 @@ export default function ListeClient(){
           
           
           
-          <div className="promo_card">
+          <div className="promo_cardFOnda">
             <h1>Bienvenu dans la liste<br/> des Fondateurs  </h1>
-            <button>Ajouter Fondateurs</button>
             
           </div> 
 
@@ -66,162 +95,45 @@ export default function ListeClient(){
                 
               </div>
               <div className="wrap">
-              <table>
+              <table className="tablelistefondta">
                 <thead>
                   <tr>
                     <th>CIN</th>
                     <th>Nom Complet</th>
                     <th>Telephone</th>
-                    <th>Salaire</th>
                     <th>Situation</th>
                     <th> &nbsp;&nbsp;&nbsp;&nbsp;Détail</th>
                     <th> &nbsp;&nbsp;&nbsp;&nbsp;Supprimer</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                  
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td >< p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  
+                  {listefondateur && listefondateur.map((element,index)=>
+                      <tr key={index}>
+                        <td>{element.cin}</td>
+                        <td>{element.prenom} {element.nom}</td>
+                        <td>{element.tele}</td>
+                        <td> <p className={element.situation == "disponible" ? "dispo" : "indispo" }>{element.situation}</p></td>
+                        <td><button className="buttonMod" onClick={ajouterFondateur}>détail</button></td>
+                        <td><button className="ButtonRes" onClick={()=>suppretionFondat(element.id)}>supp</button></td>
+                      </tr>
+                  )}
                 </tbody>
               </table>
             </div>
             </div>
           </div>
+
+
+          
         </div>
+        {
+          ajou == true ?
+              <div className="divAjoutF">
+                  <AiOutlineClose className="XFond" onClick={()=>setajou(false)} />
+              </div>
+          :""
+        }
+      
       </div>
     </div>
   )

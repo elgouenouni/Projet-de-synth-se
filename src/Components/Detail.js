@@ -4,98 +4,98 @@ import "../CssStyles/Detailstyle.css";
 export default function Detail(){
     return(
        
-        <body>
+        <body class="bodyD">
             <h1>Détail de la réservation N°2516</h1>
-            <div class="container">
+            <div class="containerD">
         
-                <div class="info-client">
+                <div class="info-clientD">
                     <h3>Informations sur le client :</h3>
-                    <div class="form">
-                        <div class="input">
+                    <div class="formD">
+                        <div class="inputD">
                             <b> Nom du client : </b>
-                            <input type="text"/>
+                            <input type="text" className="input-Detail" />
             
                         </div>
-                        <div class="input">
+                        <div class="inputD">
                             <b> Prénom du client : </b>
-                            <input type="text"/>
+                            <input type="text" className="input-Detail"/>
                         </div>
-                        <div class="input">
+                        <div class="inputD">
                             <b>Téléphone du client : </b>
-                            <input type="text"/>
+                            <input type="text" className="input-Detail"/>
                         </div>
-                        <div class="input">
+                        <div class="inputD">
                             <b>E-mail du client :</b>
-                            <input type="text"/>
+                            <input type="text" className="input-Detail"/>
                         </div>
-                        <div id="input4" class="input">
+                        <div id="input4D" class="inputD">
                             <b>Adresse du client : </b>
-                            <input type="text"/>
+                            <input type="text" className="input-Detail"/>
                         </div>
                     </div>
                 </div>
         
-                <div class="info-expert">
+                <div class="info-expertD">
                     <h3>Choix de l'expert : </h3>
-                    <div class="expert">
-                        <div class="form2">
-                            <div class="input">
+                    <div class="expertD">
+                        <div class="form2D">
+                            <div class="inputD">
                                 <b> Date de la visite : </b>
-                                <input type="date"/>
+                                <input type="date" className="input-Detail"/>
                             </div>
-                            <div class="input">
+                            <div class="inputD">
                                 <b> Choisissez un expert : </b>
-                                <select>
+                                <select className="select-Detail">
                                     <option>expert1</option>
                                     <option>expert2</option>
                                     <option>expert3</option>
                                 </select>
                             </div>
-                            <div class="input">
+                            <div class="inputD">
                                 <b>l'expert disponible est:</b>
-                                <input type="text"/>
+                                <input type="text" className="input-Detail"/>
                             </div>
                         </div>
                         <div >
-                            <button class="devis">DEVIS</button>
+                            <button class="devisD">DEVIS</button>
                         </div>
                     </div>
                     
-                    <div class="button">
-                        <button class="Accepter">Accepter</button>
-                        <button class="Annuler">Annuler</button>
+                    <div class="buttonD">
+                        <button class="AccepterD">Accepter</button>
+                        <button class="AnnulerD">Annuler</button>
                     </div>
                 </div>
                 
-                <div class="Info-employe">
+                <div class="Info-employeD">
                     <h3>Affectation des employés aux services : </h3>
-                    <div class="employe">
-                        <div class="form3">
-                            <div class="input">
+                    <div class="employeD">
+                        <div class="form3D">
+                            <div class="inputD">
                                 <b> Date de la visite : </b>
-                                <input type="date"/>
+                                <input type="date" className="input-Detail"/>
                             </div>
-                            <div class="input">
+                            <div class="inputD">
                                 <b> Choisissez le service : </b>
-                                <select>
+                                <select className="select-Detail">
                                     <option>service1</option>
                                     <option>service2</option>
                                     <option>service3</option>
                                 </select>
                             </div>
-                            <div class="input">
+                            <div class="inputD">
                                 <b>Choisissez un employé : </b>
-                                <select>
+                                <select className="select-Detail">
                                     <option>employe1</option>
                                     <option>employe2</option>
                                     <option>employe3</option>
                                 </select>
                                 
                             </div>
-                            <button class="buttonA">Ajouter</button>
+                            <button class="buttonAD">Ajouter</button>
         
                         </div>
-                        <table class="table">
+                        <table class="tableD">
                             <thead>
                               <tr>
                                 
@@ -114,18 +114,18 @@ export default function Detail(){
                                 <td>Sam Tonny</td>
                                 <td>
                                     
-                                    <button class="supprimer">supprimer</button>
+                                    <button class="supprimerD">supprimer</button>
                                 </td>
                                 
                               </tr>
-                              <tr class="resnonlu">
+                              <tr class="resnonluD">
                                 
                                 <td>29, July, 2022</td>
                                 <td>service2</td>
                                 <td>Silver</td>
                                 <td>
                                     
-                                    <button class="supprimer">supprimer</button>
+                                    <button class="supprimerD">supprimer</button>
                                 </td>
                                 
                               </tr>
@@ -136,7 +136,7 @@ export default function Detail(){
                                 <td>Jhon David</td>
                                 <td>
                                     
-                                    <button class="supprimer">supprimer</button>
+                                    <button class="supprimerD">supprimer</button>
                                 </td>
                                
                               </tr>
@@ -147,7 +147,7 @@ export default function Detail(){
                                 <td>Salina Gomiz</td>
                                 <td>
                                     
-                                    <button class="supprimer">supprimer</button>
+                                    <button class="supprimerD">supprimer</button>
                                 </td>
                                 
                               </tr>
@@ -158,14 +158,14 @@ export default function Detail(){
                                 <td>Gomiz</td>
                                 <td>
                                     
-                                    <button class="supprimer">supprimer</button>
+                                    <button class="supprimerD">supprimer</button>
                                 </td>
                             
                               </tr>
                              
                             </tbody>
                           </table>          
-                        <button class="valider">valider</button>
+                        <button class="validerD">valider</button>
                     
                         
         

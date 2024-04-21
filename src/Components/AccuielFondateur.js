@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "../CssStyles/Accueildevis.css";
+import "../CssStyles/AccueilFondateur.css";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-export default function AccueilDevis(){
+export default function AccueilFondateur(){
     
   return(
     <div className='DIV'>
-        <nav>
+        <nav className='nav-AccueilFon'>
                 <div className='Divlinks'>
-                <img src="/media/logo (1).png" width="250px" id='img'/>
+                <img src="/media/logo (1).png" width="45%" id='img'/>
                 <h1>PurtéPro</h1>
                 </div>
-                <Link to="/ProfilDevis" className='anav'><img src="/media/profil.jpg" width="70px"/></Link>
-                <Link to="" className='deconnecter'>Deconnecter</Link>
+                <Link to="/ProfilDevis" className='anav'><img src="/media/profil.jpg" width="30%"/></Link>
+                <Link to="/" className='deconnecter'>Deconnecter</Link>
         </nav>
         <div className='divh3'>
             <h3>Bienvenue Monsieur dans votre espace</h3>
