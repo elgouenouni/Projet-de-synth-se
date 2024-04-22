@@ -9,6 +9,13 @@ import axios from "axios";
 export default function ListeClientt(){
 
   const [listeprestataire , setlisteprestataire]=useState()
+
+  const [listeService , setlisteService]=useState()
+  const [search ,setsearch]=useState("")
+  const [resultatSearch,setresultatSearch]=useState(0)
+  const [vide,setvide]=useState("")
+  const [listePrestataireParService, setlistePrestataireParService]=useState()
+
   useEffect(()=>{
     axios.get("http://127.0.0.1:8000/api/prestataire")
     .then(response => {
@@ -17,6 +24,46 @@ export default function ListeClientt(){
     })
     .catch(error => console.error('Error fetching cleints:', error));
   },[])
+
+  useEffect(()=>{
+    axios.get("http://127.0.0.1:8000/api/services")
+    .then(response => {
+      const data = response.data;
+      setlisteService(data);
+    })
+    .catch(error => console.error('Error fetching cleints:', error));
+  },[])
+
+  function suppretionFondat(id){
+    const isConfirmed = window.confirm('Êtes-vous sûr de vouloir supprimer ce prestataire ?');
+    if(isConfirmed){
+      axios.delete(`http://127.0.0.1:8000/api/prestataire/${id}`)
+      .then(response => {
+        // alert("fondateur bien supprimer")
+        window.location.reload();
+      })
+      .catch(error => console.error('Error supprition de prestataire :', error));
+    }
+    
+  }
+
+  function searchPrestataire(e){
+    e.preventDefault()
+    setresultatSearch(listeprestataire.filter(element => element.cin == search))
+    setvide(search)
+
+  }
+
+  function PrestataireParService(id){
+
+    axios.get(`http://127.0.0.1:8000/api/PerstataireService/${id}`)
+    .then(response => {
+      const data = response.data;
+      setlistePrestataireParService(data);
+      console.log(listePrestataireParService)
+    })
+    .catch(error => console.error('Error recuparation data de prestataire :', error));
+  }
 
 
   return( 
@@ -27,8 +74,10 @@ export default function ListeClientt(){
         <img class="imglogo" src="logo.png" alt="Logo" />
           <a className="a1"  href="#">PuretéPro</a>
           <div className="search_boxx">
-            <input type="text" placeholder="Search PuretéPro"/>
-            <i><BsSearch /></i>
+            <form onSubmit={(e)=>searchPrestataire(e)}>
+              <input type="text" placeholder="Search PuretéPro" onChange={(e)=>setsearch(e.target.value)} />
+              <i><BsSearch /></i>
+            </form>
           </div>
         </div>
     
@@ -72,15 +121,12 @@ export default function ListeClientt(){
               {/* <div className="rowListeCli"> */}
                 <h4 className="h4list">La listes des Prestataires </h4>
               {/* </div> */}
-                  <select className="selectServ">
-                    <option selected>Service Nettoyage </option>
-                    <option>Service bureau </option>
-                    <option>Service villa </option>
-                    <option>Service appartement </option>
-                    <option>Service restaurant </option>
-                    <option>Service cristalisation </option>
-                    <option>Service marbre </option>
-                    <option>Service imeuble </option>
+                  <select className="selectServ"  onChange={(e)=>PrestataireParService(e.target.value)}>
+                    <option selected>Choisir service </option>
+                    {
+                      listeService && listeService.map((element , index) =><option value={element.id}  key={index}>{element.nom_service}</option>)
+                    }
+                    
                   </select>
                 
             <div className="wrapC">
@@ -96,144 +142,49 @@ export default function ListeClientt(){
                   </tr>
                 </thead>
                 <tbody>
-                  {listeprestataire && listeprestataire.map((element,index)=>
-                    <tr>
-                      <td>{element.cin}</td>
-                      <td>{element.nom} {element.prenom}</td>
-                      <td>{element.telephone}</td>
-                      <td> <p className={element.situation == "disponible" ? "dispo" : "indispo" }>{element.situation}</p></td>
-                      <td><button className="buttonMod">Détail</button></td>
-                      <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  )}
-                  
-                  {/* <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                  
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td > <p className="indispo">indisponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr>
-                  <tr>
-                    <td>EE123879</td>
-                    <td>Nom Complet</td>
-                    <td>0653728392 </td>
-                    <td>5000</td>
-                    <td><p className="dispo">disponible</p></td>
-                    <td><button className="buttonMod">Détail</button></td>
-                    <td><button className="ButtonRes">supp</button></td>
-                  </tr> */}
+                { resultatSearch.length > 0 ? (
+                      resultatSearch.map(element =>
+                          <tr>
+                          <td>{element.cin}</td>
+                           <td>{element.nom} {element.prenom}</td>
+                           <td>{element.telephone}</td>
+                           <td> <p className={element.situation == "disponible" ? "dispo" : "indispo" }>{element.situation}</p></td>
+                           <td><button className="buttonMod">Détail</button></td>
+                           <td><button className="ButtonRes" onClick={()=>suppretionFondat(element.id)} >supp</button></td>
+                        </tr> 
+                        ))
+                        :  resultatSearch == 0 && vide !=="" ? (
+                            <tr>
+                              <td colspan="6">Aucun prestataire trouver </td>
+                            </tr> 
+                        )
+                         :
+                         ( listePrestataireParService ? ( 
+                                                       listePrestataireParService && listePrestataireParService.map((element,index)=>
+                                                        <tr>
+                                                          <td>{element.cin}</td>
+                                                          <td>{element.nom} {element.prenom}</td>
+                                                          <td>{element.telephone}</td>
+                                                          <td> <p className={element.situation == "disponible" ? "dispo" : "indispo" }>{element.situation}</p></td>
+                                                          <td><button className="buttonMod">Détail</button></td>
+                                                          <td><button className="ButtonRes" onClick={()=>suppretionFondat(element.id)} >supp</button></td>
+                                                        </tr>
+                                                      ) )
+                                                      
+                                                      :
+                                                      (listeprestataire && listeprestataire.map((element,index)=>
+                                                          <tr>
+                                                            <td>{element.cin}</td>
+                                                            <td>{element.nom} {element.prenom}</td>
+                                                            <td>{element.telephone}</td>
+                                                            <td> <p className={element.situation == "disponible" ? "dispo" : "indispo" }>{element.situation}</p></td>
+                                                            <td><button className="buttonMod">Détail</button></td>
+                                                            <td><button className="ButtonRes" onClick={()=>suppretionFondat(element.id)} >supp</button></td>
+                                                          </tr>
+                                                    ))
+                         )
+                        
+                  }
                   
                 </tbody>
               </table>

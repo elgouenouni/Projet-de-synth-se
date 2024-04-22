@@ -277,12 +277,14 @@ margin-top:
   font-weight: bold;
   color: #0bd85a;
   display: inline-block;
+  margin-left: -30px;
 }
 .iconeCnormale{
   font-size: 30px;
   font-weight: bold;
   color: #ff4800;
   display: inline-block;
+  margin-left: -30px;
 }
 .iconeCblack{
   font-size: 30px;
