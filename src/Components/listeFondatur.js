@@ -9,6 +9,10 @@ export default function ListeClient(){
   const navigate=useNavigate()
   const [listefondateur , setlistefondateur ]=useState()
   const [ajou ,setajou]=useState(false)
+  const [search ,setsearch]=useState("")
+  const [resultatSearch,setresultatSearch]=useState(0)
+  const [vide,setvide]=useState("")
+
 
   useEffect(()=>{
     axios.get("http://127.0.0.1:8000/api/fondateur")
@@ -21,16 +25,25 @@ export default function ListeClient(){
 
 
   function suppretionFondat(id){
-    axios.delete(`http://127.0.0.1:8000/api/fondateur/${id}`)
-    .then(response => {
-      alert("fondateur bien supprimer")
-    })
-    .catch(error => console.error('Error supprition de fondateur :', error));
-    // alert( "bien supprimer"+id)
+    const isConfirmed = window.confirm('Êtes-vous sûr de vouloir supprimer ce fondateurs ?');
+    if(isConfirmed){
+      axios.delete(`http://127.0.0.1:8000/api/fondateur/${id}`)
+      .then(response => {
+        // alert("fondateur bien supprimer")
+        window.location.reload();
+      })
+      .catch(error => console.error('Error supprition de fondateur :', error));
+    } 
   }
 
   function ajouterFondateur(){
     setajou(true)
+  }
+
+  function searchFondateur(e){
+    e.preventDefault()
+    setresultatSearch(listefondateur.filter(element => element.cin == search))
+    setvide(search)
   }
 
 
@@ -41,8 +54,10 @@ export default function ListeClient(){
           <img class="imglogo" src="logo.png" alt="Logo" />
           <a className="a1"  href="#">PuretéPro</a>
           <div className="search_boxx">
-            <input type="text" placeholder="Search PuretéPro"/>
-            <i><BsSearch /></i>
+            <form onSubmit={(e)=>searchFondateur(e)}>
+              <input type="text" placeholder="Search PuretéPro" onChange={(e)=>setsearch(e.target.value)} />
+              <i><BsSearch /></i>
+            </form>
           </div>
         </div>
     
@@ -107,16 +122,35 @@ export default function ListeClient(){
                   </tr>
                 </thead>
                 <tbody>
-                  {listefondateur && listefondateur.map((element,index)=>
-                      <tr key={index}>
-                        <td>{element.cin}</td>
-                        <td>{element.prenom} {element.nom}</td>
-                        <td>{element.tele}</td>
-                        <td> <p className={element.situation == "disponible" ? "dispo" : "indispo" }>{element.situation}</p></td>
-                        <td><button className="buttonMod" onClick={ajouterFondateur}>détail</button></td>
-                        <td><button className="ButtonRes" onClick={()=>suppretionFondat(element.id)}>supp</button></td>
-                      </tr>
-                  )}
+                { resultatSearch.length > 0 ? (
+                      resultatSearch.map(element =>
+                          <tr >
+                          <td>{element.cin}</td>
+                          <td>{element.prenom} {element.nom}</td>
+                          <td>{element.tele}</td>
+                          <td> <p className={element.situation == "disponible" ? "dispo" : "indispo" }>{element.situation}</p></td>
+                          <td><button className="buttonMod" onClick={ajouterFondateur}>détail</button></td>
+                          <td><button className="ButtonRes" onClick={()=>suppretionFondat(element.id)}>supp</button></td>
+                        </tr> 
+                        ))
+                        :  resultatSearch == 0 && vide !=="" ? (
+                            <tr>
+                              <td colspan="6">Aucun Fondateur trouver </td>
+                            </tr> 
+                        )
+                         :
+                        (listefondateur && listefondateur.map((element,index)=>
+                            <tr key={index}>
+                              <td>{element.cin}</td>
+                              <td>{element.prenom} {element.nom}</td>
+                              <td>{element.tele}</td>
+                              <td> <p className={element.situation == "disponible" ? "dispo" : "indispo" }>{element.situation}</p></td>
+                              <td><button className="buttonMod" onClick={ajouterFondateur}>détail</button></td>
+                              <td><button className="ButtonRes" onClick={()=>suppretionFondat(element.id)}>supp</button></td>
+                            </tr>
+                            )
+                        )
+                  }
                 </tbody>
               </table>
             </div>
